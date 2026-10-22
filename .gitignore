@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dateien, die in den Notebooks per %%writefile entstehen
+notebooks/*.py
+loesungen/*.py

@@ -1,0 +1,20 @@
+[project]
+name = "gfu-python-einsteiger"
+version = "0.1.0"
+description = "GFU-Schulung s2099: Python für Programmier-Anfänger"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=6.29",
+]
+
+[dependency-groups]
+dev = [
+    "nbclient>=0.10",
+    "nbformat>=5.10",
+    "ruff>=0.9",
+]
+
+[tool.ruff]
+line-length = 88
+extend-exclude = ["*.ipynb"]  # Notebooks enthalten absichtliche Fehlerbeispiele
