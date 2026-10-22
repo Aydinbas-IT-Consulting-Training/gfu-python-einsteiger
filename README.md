@@ -21,17 +21,19 @@ Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
 
 | Nr. | Notebook | Buchkapitel |
 | --- | --- | --- |
-| 00 | Einführung und Setup | 1, 2 |
+| 00 | Einführung, Setup, Stil (PEP 8) | 1, 2 |
 | 01 | Variablen und Datentypen | 2 |
-| 02 | Operatoren und Bedingungen | 2, 6 |
-| 03 | Schleifen | 2 |
-| 04 | Strings | 3 |
-| 05 | Collections | 5, 8 |
-| 06 | Funktionen und Module | 6, 16 |
-| 07 | Fehlerbehandlung | 9 |
-| 08 | Dateien | 7 |
-| 09 | Klassen und Objekte | 4 |
-| 10 | Abschlussprojekt Tic-Tac-Toe | 13 |
+| 02 | Python unter der Haube | – |
+| 03 | Operatoren und Bedingungen | 2, 6 |
+| 04 | Schleifen | 2 |
+| 05 | Strings | 3 |
+| 06 | Collections, mutable vs. immutable | 5, 8 |
+| 07 | Funktionen | 6, 16 |
+| 08 | Module und Pakete | 6 |
+| 09 | Fehlerbehandlung | 9 |
+| 10 | Dateien | 7 |
+| 11 | Klassen und Objekte | 4 |
+| 12 | Abschlussprojekt Tic-Tac-Toe | 13 |
 
 ## Ordner
 
@@ -40,6 +42,7 @@ notebooks/   Notebooks für Teilnehmende, Übungen leer
 loesungen/   dieselben Notebooks mit Lösungen
 daten/       Beispieldateien (daten/ausgabe/ entsteht beim Arbeiten)
 projekte/    lauffähige Skripte
+beispiele/   Module und Pakete für Notebook 08
 tools/       Hilfsskripte für die Pflege des Materials
 ```
 
