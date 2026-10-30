@@ -25,15 +25,25 @@ Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
 | 01 | Variablen und Datentypen | 2 |
 | 02 | Python unter der Haube | – |
 | 03 | Operatoren und Bedingungen | 2, 6 |
-| 04 | Schleifen | 2 |
+| 04 | Schleifen | 2, 6 |
 | 05 | Strings | 3 |
 | 06 | Collections, mutable vs. immutable | 5, 8 |
-| 07 | Funktionen | 6, 16 |
-| 08 | Module und Pakete | 6 |
-| 09 | Fehlerbehandlung | 9 |
-| 10 | Dateien | 7 |
+| 07 | Funktionen | 2, 6, 16 |
+| 08 | Module und Pakete | 2, 6 |
+| 09 | Fehlerbehandlung | 2, 9 |
+| 10 | Dateien | 7, 14 |
 | 11 | Klassen und Objekte | 4 |
 | 12 | Abschlussprojekt Tic-Tac-Toe | 13 |
+
+### Lesepfad zum Buch
+
+Die Notebooks folgen weitgehend der Reihenfolge des Buchs. Drei Abweichungen:
+
+- **Kapitel 2 (Schnelleinstieg)** ist auf mehrere Notebooks verteilt: 01 Variablen, 03 Bedingungen, 04 Schleifen.
+- **Kapitel 4 (Klassen)** lesen wir erst am Ende (Notebook 11), weil Klassen Funktionen voraussetzen.
+- **Kapitel 9 (Fehlerbehandlung)** ziehen wir vor Kapitel 7 (Dateien), weil wir `try` und `with` beim Arbeiten mit Dateien brauchen.
+
+Zum Mitlesen also: 1 → 2 → 3 → 5 → 6 → 9 → 7 → 4 → 13.
 
 ## Ordner
 
@@ -56,5 +66,4 @@ uv run python tools/check_notebooks.py   # alle Lösungen ausführen
 uv run python tools/make_exercises.py    # notebooks/ aus loesungen/ erzeugen
 ```
 
-Codebeispiele teilweise nach Inden, *Einstieg in Python*, überarbeitet.
 `daten/faust.txt` stammt von Project Gutenberg.
