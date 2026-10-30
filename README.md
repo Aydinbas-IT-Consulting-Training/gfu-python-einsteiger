@@ -64,13 +64,15 @@ tools/       Hilfsskripte für die Pflege des Materials
 
 ## Material pflegen
 
-Die Notebooks in `loesungen/` sind die Quelle. Lösungszellen tragen den Tag `solution`,
-Zellen mit absichtlichem Fehler den Tag `raises-exception`.
+Die Notebooks in `loesungen/` sind die Quelle; `notebooks/` wird daraus erzeugt und nie
+direkt bearbeitet. Lösungszellen tragen den Tag `solution`, Zellen mit absichtlichem Fehler
+den Tag `raises-exception`.
 
 ```bash
-uv run python tools/check_notebooks.py   # alle Lösungen ausführen
-uv run python tools/make_exercises.py    # notebooks/ aus loesungen/ erzeugen
-uv run pytest                            # Tests in testen/
+uv run python tools/check_notebooks.py           # alle Lösungen ausführen
+uv run python tools/make_exercises.py            # notebooks/ aus loesungen/ erzeugen
+uv run python tools/make_exercises.py --check    # prüfen, ob notebooks/ aktuell ist
+uv run pytest                                    # Tests in testen/
 ```
 
 Der Kurs unterrichtet Python 3.15 (siehe `.python-version`); `uv sync` installiert es bei Bedarf.
