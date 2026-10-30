@@ -3,9 +3,10 @@ name = "gfu-python-einsteiger"
 version = "0.1.0"
 description = "GFU-Schulung s2099: Python für Programmier-Anfänger"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.15"
 dependencies = [
     "ipykernel>=6.29",
+    "pytest>=8.3",
 ]
 
 [dependency-groups]
