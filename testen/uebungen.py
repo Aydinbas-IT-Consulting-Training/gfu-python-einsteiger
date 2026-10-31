@@ -1,22 +1,25 @@
 """Übungen: Schreibe Tests für diese Funktionen in eine neue Datei test_uebungen.py.
 
-Eine der Funktionen hat einen Fehler. Finde ihn mit einem Test, bevor du ihn behebst.
+Die Aufgaben stehen in README.md, Abschnitt "Übungen".
 Eine Musterlösung steht in loesung_test_uebungen.py.
 """
 
-
-def is_leap_year(year: int) -> bool:
-    """Schaltjahr: durch 4 teilbar, außer durch 100, aber wieder durch 400."""
-    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+from datetime import date
 
 
-def withdraw(balance: float, amount: float) -> float:
-    """Hebt amount vom Konto ab und liefert den neuen Kontostand."""
-    if amount <= 0:
-        raise ValueError(f"Betrag muss positiv sein, war {amount}")
-    if amount > balance:
-        raise ValueError("Kontostand reicht nicht aus")
-    return balance - amount
+def late_fee(due: date, returned: date) -> float:
+    """0,50 € pro Tag nach Fälligkeit, höchstens 10 €. Am Fälligkeitstag kostenlos."""
+    days_late = (returned - due).days + 1
+    return min(max(days_late, 0) * 0.50, 10.0)
+
+
+def ask_quantity() -> int:
+    """Fragt so lange nach einer Menge, bis eine ganze Zahl eingegeben wird."""
+    while True:
+        answer = input("Menge: ")
+        if answer.isdigit():
+            return int(answer)
+        print(f"'{answer}' ist keine ganze Zahl")
 
 
 def average(numbers: list[float]) -> float:

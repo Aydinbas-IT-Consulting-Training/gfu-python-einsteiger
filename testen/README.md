@@ -80,13 +80,22 @@ Listen, Dictionaries und Strings genau die Stelle, an der sie sich unterscheiden
 
 ## Übungen
 
-1. Lege `test_uebungen.py` an und schreibe Tests für die drei Funktionen in
-   `uebungen.py`: normale Fälle, Randfälle und die erwarteten Fehler.
-2. Einer deiner Tests für `average()` sollte rot werden. Überlege, was die
-   Funktion bei einer leeren Liste tun sollte, und behebe den Fehler.
-3. Vergleiche mit `loesung_test_uebungen.py`.
-4. Ergänze `ShoppingCart` in `prices.py` um eine Methode `count()`, die die
-   Anzahl der Produkte liefert. Schreibe den Test zuerst, sieh ihn rot werden,
-   dann schreibe die Methode.
+Schreibe deine Tests in eine neue Datei `test_uebungen.py`.
+
+1. **count() test-first (leicht):** Ergänze `ShoppingCart` in `prices.py` um
+   eine Methode `count()`, die die Anzahl der Produkte liefert. Schreibe den
+   Test zuerst, sieh ihn rot werden, dann schreibe die Methode.
+2. **Tests für eine Funktion mit verstecktem Fehler (mittel):**
+   `late_fee(due, returned)` in `uebungen.py` ist Code, den eine KI geschrieben
+   haben könnte (präpariert, ein Fehler eingebaut): Er berechnet die
+   Mahngebühr der Bibliothek, 0,50 € pro Tag Verspätung, höchstens 10 €,
+   Rückgabe am Fälligkeitstag kostenlos. Schreibe Tests mit `parametrize` und
+   `date`-Objekten für normale Fälle und Grenzen, bis einer den Fehler aufdeckt.
+3. **Eingabe und Ausgabe testen (schwer):** `ask_quantity()` in `uebungen.py`
+   fragt so lange nach einer Menge, bis eine ganze Zahl kommt, und meldet
+   ungültige Eingaben. Teste sie: Ersetze `input` mit `monkeypatch` durch
+   vorgegebene Antworten (`"drei"`, `"3"`) und prüfe mit `capsys` die Meldung.
+
+Die Musterlösung steht in `loesung_test_uebungen.py`.
 
 Im Abschlussprojekt (Notebook 14) testest du so die Spiellogik von Tic-Tac-Toe.
