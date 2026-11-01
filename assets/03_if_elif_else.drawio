@@ -1,0 +1,97 @@
+<mxfile host="drawio">
+  <diagram id="if-elif-else" name="if-elif-else">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="90" y="0" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="assign" value="temperature = 12" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="30" y="70" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" value="temperature &gt; 25" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="150" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="temperature &gt; 15" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="290" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="temperature &gt; 5" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="430" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="hot" value="print(&quot;heiß&quot;)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="380" y="175" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mild" value="print(&quot;angenehm&quot;)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="380" y="315" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fresh" value="print(&quot;frisch&quot;)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;fontFamily=Menlo;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="455" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cold" value="print(&quot;kalt&quot;)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="570" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="elsenote" value="else" style="text;html=1;align=right;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="580" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="Ende" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="430" y="650" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Fett: der Weg für&lt;br&gt;&lt;font face=&quot;Menlo&quot;&gt;temperature = 12&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="380" y="60" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=3;" edge="1" parent="1" source="start" target="assign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=3;" edge="1" parent="1" source="assign" target="r1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="True" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=15;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="r1" target="hot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="True" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=15;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="r2" target="mild">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="True" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=15;fontFamily=Helvetica;labelBackgroundColor=#ffffff;strokeWidth=3;" edge="1" parent="1" source="r3" target="fresh">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" value="False" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=15;fontFamily=Helvetica;labelBackgroundColor=#ffffff;strokeWidth=3;" edge="1" parent="1" source="r1" target="r2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="False" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=15;fontFamily=Helvetica;labelBackgroundColor=#ffffff;strokeWidth=3;" edge="1" parent="1" source="r2" target="r3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" value="False" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=15;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="r3" target="cold">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x1" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hot" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="200" />
+              <mxPoint x="650" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x2" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mild" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="340" />
+              <mxPoint x="650" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=3;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fresh" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="480" />
+              <mxPoint x="650" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x4" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cold" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

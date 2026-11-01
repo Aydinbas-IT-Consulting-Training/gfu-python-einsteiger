@@ -1,0 +1,91 @@
+<mxfile host="drawio">
+  <diagram id="zuweisung-kopie" name="Zuweisung und Kopie">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hl" value="Zuweisung: ein Objekt" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="360" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cl" value="alias = original&lt;br&gt;alias.append(4)" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="30" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nl1" value="original" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="100" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nl2" value="alias" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="180" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="l0" value="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" value="2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="240" y="140" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="280" y="140" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" value="4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="320" y="140" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="el1" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="nl1" target="l0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el2" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="nl2" target="l0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="capl" value="alias is original → True" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="245" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sep" value="" style="endArrow=none;html=1;strokeColor=#999999;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="0" as="sourcePoint" />
+            <mxPoint x="390" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hr" value="Kopie: zwei Objekte" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="0" width="360" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cr" value="copy_1 = original.copy()&lt;br&gt;copy_1.append(99)" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="420" y="30" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nr1" value="original" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nr2" value="copy_1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="420" y="180" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="a0" value="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="620" y="100" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" value="2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="660" y="100" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b0" value="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="620" y="180" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" value="2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="660" y="180" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="700" y="180" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="99" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="740" y="180" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="er1" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="nr1" target="a0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er2" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="nr2" target="b0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="capr" value="copy_1 is original → False" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="420" y="245" width="360" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,93 @@
+<mxfile host="drawio">
+  <diagram id="funktionen" name="Aufbau in Funktionen">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Aufrufkette -->
+        <mxCell id="main" value="main()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="335" y="0" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="play" value="play()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="335" y="80" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lCalls" value="ruft auf" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="410" y="45" width="80" height="30" as="geometry" />
+        </mxCell>
+        <!-- mit Ein- und Ausgabe -->
+        <mxCell id="io" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="170" width="300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ioTitle" value="mit Ein- und Ausgabe (&lt;font face=&quot;Menlo&quot;&gt;print&lt;/font&gt;, &lt;font face=&quot;Menlo&quot;&gt;input&lt;/font&gt;)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="15" y="176" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fPrint" value="print_board()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fAsk" value="ask_for_field()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="220" height="40" as="geometry" />
+        </mxCell>
+        <!-- ohne Ein- und Ausgabe -->
+        <mxCell id="pure" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="170" width="460" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="pureTitle" value="ohne Ein- und Ausgabe: Spiellogik" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="355" y="176" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fCreate" value="create_board()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="360" y="220" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fPlace" value="place_mark()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="580" y="220" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fWon" value="has_won()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="360" y="280" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fFull" value="is_full()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="580" y="280" width="200" height="40" as="geometry" />
+        </mxCell>
+        <!-- Tests -->
+        <mxCell id="tIn" value="test_eingabe.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tLogic" value="test_tictactoe.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="460" y="400" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lIn" value="Übung 9: mit &lt;font face=&quot;Menlo&quot;&gt;monkeypatch&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="160" y="350" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lLogic" value="Schritt 6: direkt testbar" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="580" y="350" width="200" height="40" as="geometry" />
+        </mxCell>
+        <!-- Kanten -->
+        <mxCell id="eMain" style="endArrow=classic;html=1;strokeColor=#333333;" edge="1" parent="1" source="main" target="play">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eIo" style="endArrow=classic;html=1;strokeColor=#333333;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="120" as="sourcePoint" />
+            <mxPoint x="150" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ePure" style="endArrow=classic;html=1;strokeColor=#333333;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="120" as="sourcePoint" />
+            <mxPoint x="570" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eTIn" style="endArrow=classic;html=1;strokeColor=#333333;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="400" as="sourcePoint" />
+            <mxPoint x="150" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eTLogic" style="endArrow=classic;html=1;strokeColor=#333333;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="400" as="sourcePoint" />
+            <mxPoint x="570" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

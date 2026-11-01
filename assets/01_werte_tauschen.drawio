@@ -1,0 +1,75 @@
+<mxfile host="drawio">
+  <diagram id="werte-tauschen" name="Werte tauschen">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="before" value="vorher: first_name, last_name = &quot;Huber&quot;, &quot;Stefan&quot;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="640" height="30" as="geometry" />
+        </mxCell>
+        <!-- Zeile mit dem Tausch, Teil fuer Teil -->
+        <mxCell id="l_first" value="first_name" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="50" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="," style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="140" y="50" width="25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l_last" value="last_name" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="165" y="50" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eq" value="=" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r_last" value="last_name" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="345" y="50" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="," style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="475" y="50" width="25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r_first" value="first_name" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="500" y="50" width="140" height="40" as="geometry" />
+        </mxCell>
+        <!-- Schritt 1: rechte Seite auswerten -->
+        <mxCell id="v_stefan" value="&quot;Stefan&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="355" y="150" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v_huber" value="&quot;Huber&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="515" y="150" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s1a" value="1." style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;fontSize=16;fontFamily=Helvetica;fontColor=#333333;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="r_last" target="v_stefan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1b" value="1." style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;fontSize=16;fontFamily=Helvetica;fontColor=#333333;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="r_first" target="v_huber">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Schritt 2: der Reihe nach verteilen -->
+        <mxCell id="s2a" value="2." style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2;fontSize=16;fontFamily=Helvetica;fontColor=#333333;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" edge="1" parent="1" source="v_stefan" target="l_first">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="230" />
+              <mxPoint x="70" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s2b" value="2." style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2;fontSize=16;fontFamily=Helvetica;fontColor=#333333;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" edge="1" parent="1" source="v_huber" target="l_last">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="260" />
+              <mxPoint x="230" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <!-- Erklärung und Ergebnis -->
+        <mxCell id="t1" value="1. Python wertet zuerst die ganze rechte Seite aus." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="285" width="640" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="2. Dann verteilt es die Werte der Reihe nach auf die Namen links." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="310" width="640" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="after" value="nachher: first_name → &quot;Stefan&quot;, last_name → &quot;Huber&quot;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="345" width="640" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

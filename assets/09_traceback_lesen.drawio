@@ -1,0 +1,49 @@
+<mxfile host="drawio">
+  <diagram id="traceback-lesen" name="Traceback lesen">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="head" value="ZeroDivisionError&amp;nbsp;&amp;nbsp;Traceback (most recent call last)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#666666;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="frame3" value="Cell In[1], line 5&lt;br&gt;----&amp;gt; 5 average([])" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=18;fontFamily=Menlo;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="0" y="40" width="540" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="frame2" value="Cell In[1], line 2, in average(numbers)&lt;br&gt;----&amp;gt; 2&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return sum(numbers) / len(numbers)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="0" y="124" width="540" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="last" value="ZeroDivisionError: division by zero" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;fontFamily=Menlo;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="0" y="208" width="540" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Ausgabe in Jupyter, gekürzt" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#666666;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="0" y="256" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;fontSize=18;fontFamily=Helvetica;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="54" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Helvetica;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="138" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;fontFamily=Helvetica;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="212" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="der Weg dorthin: Zeile 5 hat &lt;font face=&quot;Menlo&quot;&gt;average&lt;/font&gt; aufgerufen" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="606" y="40" width="200" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="hier ist es passiert: Zeile 2, in &lt;font face=&quot;Menlo&quot;&gt;average&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="606" y="124" width="200" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="zuerst: Fehlertyp und Beschreibung" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="606" y="200" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="endArrow=classic;html=1;strokeColor=#333333;" edge="1" parent="1" source="b1" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" style="endArrow=classic;html=1;strokeColor=#333333;" edge="1" parent="1" source="b2" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

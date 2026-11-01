@@ -71,6 +71,7 @@ daten/       Beispieldateien (daten/ausgabe/ entsteht beim Arbeiten)
 projekte/    lauffähige Skripte
 testen/      Einstieg in pytest: Modul, Testdateien, Übungen
 beispiele/   Module und Pakete für Notebook 08
+assets/      Grafiken der Notebooks (draw.io-Quelle und PNG)
 tools/       Hilfsskripte für die Pflege des Materials
 ```
 
@@ -85,7 +86,12 @@ uv run python tools/check_notebooks.py           # alle Lösungen ausführen
 uv run python tools/make_exercises.py            # notebooks/ aus loesungen/ erzeugen
 uv run python tools/make_exercises.py --check    # prüfen, ob notebooks/ aktuell ist
 uv run pytest                                    # Tests in testen/
+uv run python tools/export_assets.py             # Grafiken in assets/ nach PNG exportieren
 ```
+
+Die Grafiken liegen als draw.io-Quelle in `assets/` (`<Notebook-Nr>_<thema>.drawio`), daneben
+die exportierte PNG, die die Notebooks mit `![...](../assets/<name>.png)` einbinden. Zum Bearbeiten
+braucht man die [draw.io-Desktop-App](https://www.drawio.com); ändere die `.drawio`, nicht die PNG.
 
 Der Kurs unterrichtet Python 3.15 (siehe `.python-version`); `uv sync` installiert es bei Bedarf.
 

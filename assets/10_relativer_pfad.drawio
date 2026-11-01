@@ -1,0 +1,90 @@
+<mxfile host="drawio">
+  <diagram id="relativer-pfad" name="Relativer Pfad">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sup" value=".." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="60" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="slash1" value="/" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="60" y="0" width="26" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sdaten" value="daten" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="86" y="0" width="90" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="slash2" value="/" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="176" y="0" width="26" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sfile" value="einkaufsliste.txt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="202" y="0" width="250" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="pathnote" value="relativer Pfad: gilt ab dem Arbeitsordner" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="472" y="0" width="300" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="fproj" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="100" width="780" height="365" as="geometry" />
+        </mxCell>
+        <mxCell id="lproj" value="Projektordner: eine Ebene über &lt;font face=&quot;Menlo&quot; style=&quot;font-size:18px&quot;&gt;notebooks/&lt;/font&gt;" style="text;html=1;align=right;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="360" y="108" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fdaten" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="20" y="150" width="360" height="295" as="geometry" />
+        </mxCell>
+        <mxCell id="ldaten" value="daten/" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="30" y="155" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" value="einkaufsliste.txt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="195" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" value="faust.txt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="235" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" value="highscores.csv" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="275" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" value="numbers.txt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="315" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" value="personen.json" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="355" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="d6" value="ausgabe/" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="395" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="fnb" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="150" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lnb" value="notebooks/" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="430" y="155" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nbfile" value="10_dateien.ipynb" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="440" y="195" width="210" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="nbnote" value="Arbeitsordner: hier beginnt der Pfad" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="440" y="240" width="310" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="eup" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="44" as="sourcePoint" />
+            <mxPoint x="30" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edaten" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="131" y="44" as="sourcePoint" />
+            <mxPoint x="131" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efile" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" parent="1" target="d1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="327" y="44" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="327" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

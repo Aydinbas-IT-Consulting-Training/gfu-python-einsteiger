@@ -1,0 +1,60 @@
+<mxfile host="drawio">
+  <diagram id="with-block" name="with-Block">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="code" value="with open(shopping_list, encoding=&quot;utf-8&quot;) as file:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;content = file.read()&lt;br&gt;print(content)" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="600" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="open" value="Datei öffnen, Name &lt;font face=&quot;Menlo&quot; style=&quot;font-size:18px&quot;&gt;file&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="120" y="110" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="block" value="content = file.read()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="120" y="190" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cond" value="Fehler&lt;br&gt;im Block?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="160" y="270" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="close1" value="file.close()&lt;br&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size:16px&quot; color=&quot;#333333&quot;&gt;automatisch&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="150" y="410" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="print" value="print(content)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="150" y="500" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="Ende" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="220" y="580" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="close2" value="file.close()&lt;br&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size:16px&quot; color=&quot;#333333&quot;&gt;automatisch&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="460" y="410" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="err" value="Fehler wird weitergemeldet:&lt;br&gt;Traceback oder &lt;font face=&quot;Menlo&quot;&gt;except&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;fontFamily=Helvetica;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="440" y="500" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" parent="1" source="open" target="block">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" parent="1" source="block" target="cond">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efalse" value="False" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=15;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="cond" target="close1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etrue" value="True" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;fontSize=15;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cond" target="close2">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" parent="1" source="close1" target="print">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" parent="1" source="print" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="endArrow=classic;html=1;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" parent="1" source="close2" target="err">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,81 @@
+<mxfile host="drawio">
+  <diagram id="klasse-objekte" name="Klasse und Objekte">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Klasse als Bauplan -->
+        <mxCell id="lcls" value="Klasse&lt;br&gt;(Bauplan)" style="text;html=1;align=right;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="35" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cls" value="" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="0" width="480" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="clstitle" value="&lt;b&gt;class Car:&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="175" y="6" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="clsbody" value="def __init__(self, brand, color, horse_power)&lt;br&gt;def paint(self, new_color)&lt;br&gt;def apply_tuning_kit(self)" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="175" y="40" width="455" height="70" as="geometry" />
+        </mxCell>
+        <!-- Objekte -->
+        <mxCell id="lobj" value="Objekte (Exemplare)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="20" y="215" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="objL" value="brand = &quot;VW&quot;&lt;br&gt;color = &lt;s&gt;&quot;orange&quot;&lt;/s&gt; &quot;green&quot;&lt;br&gt;horse_power = &lt;s&gt;123&lt;/s&gt; 273" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;align=left;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="245" width="340" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="objR" value="brand = &quot;Audi&quot;&lt;br&gt;color = &quot;blue&quot;&lt;br&gt;horse_power = 275" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;align=left;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="440" y="245" width="340" height="100" as="geometry" />
+        </mxCell>
+        <!-- Klasse erzeugt Objekte -->
+        <mxCell id="eL" value="Car(&quot;VW&quot;, &quot;orange&quot;, 123)" style="endArrow=classic;html=1;strokeColor=#333333;fontSize=14;fontFamily=Menlo;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="120" as="sourcePoint" />
+            <mxPoint x="190" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eR" value="Car(&quot;Audi&quot;, &quot;blue&quot;, 275)" style="endArrow=classic;html=1;strokeColor=#333333;fontSize=14;fontFamily=Menlo;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="120" as="sourcePoint" />
+            <mxPoint x="610" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Namen -->
+        <mxCell id="nMy" value="my_car" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="50" y="410" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nSelf" value="self" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="410" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nToms" value="toms_car" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="545" y="410" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aMy" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="410" as="sourcePoint" />
+            <mxPoint x="130" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aSelf" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="410" as="sourcePoint" />
+            <mxPoint x="250" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aToms" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="410" as="sourcePoint" />
+            <mxPoint x="610" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Erklaerung -->
+        <mxCell id="txtL" value="In &lt;font face=&quot;Menlo&quot;&gt;my_car.paint(&quot;green&quot;)&lt;/font&gt; zeigt &lt;font face=&quot;Menlo&quot;&gt;self&lt;/font&gt; auf dasselbe Objekt wie &lt;font face=&quot;Menlo&quot;&gt;my_car&lt;/font&gt;: Die Methode ändert dieses Objekt." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="20" y="465" width="380" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="txtR" value="Jedes Objekt hat eigene Attributwerte. Ändert sich &lt;font face=&quot;Menlo&quot;&gt;my_car&lt;/font&gt;, bleibt &lt;font face=&quot;Menlo&quot;&gt;toms_car&lt;/font&gt; gleich." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="440" y="465" width="340" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
