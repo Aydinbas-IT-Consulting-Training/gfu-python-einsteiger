@@ -61,9 +61,6 @@
         <mxCell id="s2" value="&lt;font face=&quot;Menlo&quot;&gt;round&lt;/font&gt; in der Funktion:&amp;nbsp; lokal nein → global nein → builtins &lt;b&gt;gefunden&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="20" y="468" width="780" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="s3" value="&lt;font face=&quot;Menlo&quot;&gt;tax&lt;/font&gt; draußen im Notebook:&amp;nbsp; global nein → builtins nein → &lt;b&gt;NameError&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="20" y="501" width="780" height="28" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
