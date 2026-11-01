@@ -12,7 +12,7 @@ Begleitbuch: Michael Inden, *Einstieg in Python*, 2. Auflage, dpunkt 2024.
    - mit Git:
 
      ```bash
-     git clone https://github.com/pmayd/gfu-python-einsteiger.git
+     git clone https://github.com/Aydinbas-IT-Consulting-Training/gfu-python-einsteiger.git
      ```
 
 4. Den Ordner in VS Code öffnen (*Datei → Ordner öffnen*) und dort ein Terminal öffnen: Menü *Terminal → Neues Terminal*, auf einer deutschen Tastatur auch `Strg + ö`. Das Terminal startet im Kursordner. Dort ausführen:
