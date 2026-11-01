@@ -49,3 +49,16 @@ def load_cart(path: Path) -> ShoppingCart:
         product, price = line.split(";")
         cart.add(product, float(price))
     return cart
+
+
+def ask_net_price() -> float:
+    """Fragt einen Nettopreis ab; Komma und Punkt sind erlaubt."""
+    answer = input("Nettopreis: ")
+    return float(answer.replace(",", "."))  # ValueError bei Text wie "gratis"
+
+
+def print_receipt(cart: ShoppingCart) -> None:
+    """Gibt den Kassenbon aus: eine Zeile pro Produkt mit Bruttopreis, dann die Summe."""
+    for product, net_price in cart.items.items():
+        print(f"{product}: {gross_price(net_price):.2f} €")
+    print(f"Summe: {cart.total():.2f} €")

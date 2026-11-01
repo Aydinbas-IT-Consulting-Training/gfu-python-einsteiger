@@ -1,4 +1,4 @@
-# Testen mit pytest
+# 13 · Testen mit pytest
 
 Ein Test ist ein kleines Programm, das prüft, ob dein Programm tut, was es soll.
 Statt nach jeder Änderung von Hand auszuprobieren, startest du einen Befehl und
@@ -6,6 +6,22 @@ siehst sofort, ob noch alles stimmt.
 
 [pytest](https://docs.pytest.org/) ist das Standardwerkzeug dafür. Es ist im
 Kursprojekt schon installiert (`uv sync`).
+
+**Lernziele**
+
+- Du schreibst Tests mit `assert` und startest sie mit pytest.
+- Du liest die Ausgabe von pytest und findest den Grund für einen roten Test.
+- Du testest viele Fälle auf einmal mit `parametrize` und erwartete Fehler mit
+  `pytest.raises`.
+- Du bereitest Testdaten mit Fixtures vor, auch mit `tmp_path` für Dateien.
+- Du testest Eingabe und Ausgabe mit `monkeypatch` und `capsys`.
+
+Alle Befehle in dieser Anleitung startest du im Ordner `testen`. Wechsle im
+Terminal zuerst dorthin:
+
+```bash
+cd testen
+```
 
 ## Was liegt hier?
 
@@ -18,6 +34,7 @@ Kursprojekt schon installiert (`uv sync`).
 | `conftest.py` | gemeinsame Fixture `cart` für alle Testdateien |
 | `test_02_fixtures.py` | Fixtures, eingebaute Fixture `tmp_path` |
 | `test_03_organisieren.py` | Testklassen, `skip`, `skipif`, `xfail` |
+| `test_04_ein_ausgabe.py` | `input()` ersetzen mit `monkeypatch`, `print()` prüfen mit `capsys`, `pytest.param` |
 | `uebungen.py` | Übungen: Funktionen, für die du Tests schreibst |
 | `loesung_test_uebungen.py` | Musterlösung zu den Übungen |
 
@@ -53,11 +70,7 @@ nur auf, wenn du die Anzahl im Blick hast.
 
 ## Tests starten
 
-Alle Befehle im Ordner `testen` ausführen:
-
-```bash
-cd testen
-```
+Alle Befehle im Ordner `testen` ausführen (siehe oben):
 
 | Befehl | Wirkung |
 |---|---|
@@ -95,11 +108,21 @@ einmal pro Fall; `-v` zeigt die Fälle in eckigen Klammern, etwa
 
 ## Die Ausgabe lesen
 
+So sieht `uv run pytest` im Ordner `testen` aus:
+
 ```text
-test_00_assert.py ......                                   [ 15%]
-test_01_grundlagen.py ...........                          [ 44%]
-test_03_organisieren.py .....ssx                           [100%]
+test_00_assert.py ......                                                 [ 14%]
+test_01_grundlagen.py ............                                       [ 42%]
+test_02_fixtures.py .........                                            [ 64%]
+test_03_organisieren.py .....ssx                                         [ 83%]
+test_04_ein_ausgabe.py .......                                           [100%]
+
+=================== 39 passed, 2 skipped, 1 xfailed in 0.06s ===================
 ```
+
+Jede Datei bekommt eine Zeile mit einem Zeichen pro Test, rechts steht der
+Fortschritt in Prozent. Die letzte Zeile zählt zusammen. Mit `-q` (quiet)
+fasst pytest alles in eine Zeile Zeichen zusammen.
 
 | Zeichen | Bedeutung |
 |---|---|
@@ -154,7 +177,7 @@ einen Preis wie `"4,99 €"` in die Zahl `4.99` um und löst bei Text wie
 
 **Übung 3 (Einkaufsliste aus einer Datei, leicht):** `read_shopping_list(path)`
 liest eine Textdatei mit einem Eintrag pro Zeile und lässt Leerzeilen und
-Leerzeichen am Rand weg. Teste sie, ohne eine echte Datei anzulegen: Schreibe
+Leerzeichen am Rand weg. Teste sie, ohne Dateien im Projekt anzulegen: Schreibe
 mit der Fixture `tmp_path` eine kleine Liste mit einer Leerzeile in eine Datei
 und prüfe das Ergebnis.
 
@@ -177,8 +200,28 @@ Was tust du mit der Markierung, sobald die Funktion stimmt?
 **Übung 6 (Eingabe und Ausgabe testen, schwer):** `ask_quantity()` fragt so
 lange nach einer Menge, bis eine ganze Zahl kommt, und meldet ungültige
 Eingaben. Teste sie: Ersetze `input` mit `monkeypatch` durch vorgegebene
-Antworten (`"drei"`, `"3"`) und prüfe mit `capsys` die Meldung.
+Antworten (`"drei"`, `"3"`) und prüfe mit `capsys` die Meldung. Wie beides
+geht, zeigt `test_04_ein_ausgabe.py`.
+
+Tipp: Für mehrere Antworten nacheinander legst du sie in einen Iterator,
+`answers = iter(["drei", "3"])`, und ersetzt `input` durch
+`lambda prompt: next(answers)`. Jeder Aufruf liefert dann die nächste Antwort.
 
 Die Musterlösung steht in `loesung_test_uebungen.py`.
 
 Im Abschlussprojekt (Notebook 14) testest du so die Spiellogik von Tic-Tac-Toe.
+
+## Zusammenfassung
+
+- pytest sammelt Funktionen `test_…` aus Dateien `test_*.py` und führt sie aus.
+- `assert` prüft eine Bedingung; `pytest.approx` vergleicht Kommazahlen mit
+  Toleranz.
+- `pytest.raises` prüft, dass ein Fehler kommt, `match=` prüft seine Meldung.
+- `@pytest.mark.parametrize` führt einen Test für viele Fälle aus,
+  `pytest.param(..., id="name")` gibt einem Fall einen sprechenden Namen.
+- Fixtures liefern Testdaten; `conftest.py` teilt sie mit allen Testdateien,
+  `tmp_path` ist ein frischer Ordner für Dateien.
+- `skip`, `skipif` und `xfail` markieren Tests, die nicht laufen sollen oder
+  erwartet fehlschlagen.
+- `monkeypatch` ersetzt `input()`, `capsys.readouterr().out` liefert die
+  Ausgabe von `print()`.
