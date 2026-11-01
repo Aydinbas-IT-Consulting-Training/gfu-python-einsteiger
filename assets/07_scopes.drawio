@@ -20,8 +20,8 @@
         <mxCell id="local" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="40" y="110" width="340" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="lLocal" value="&lt;b&gt;lokal&lt;/b&gt;: ein Aufruf &lt;font face=&quot;Menlo&quot;&gt;gross_price(100)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="60" y="120" width="310" height="30" as="geometry" />
+        <mxCell id="lLocal" value="&lt;b&gt;lokal&lt;/b&gt;: Namen innerhalb der Funktion &lt;font face=&quot;Menlo&quot;&gt;gross_price&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="118" width="310" height="48" as="geometry" />
         </mxCell>
         <mxCell id="lLocalNote" value="entsteht beim Aufruf,&lt;br&gt;verschwindet nach return" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="60" y="280" width="300" height="44" as="geometry" />
