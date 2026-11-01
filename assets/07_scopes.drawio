@@ -1,0 +1,73 @@
+<mxfile host="drawio">
+  <diagram id="scopes" name="Namensräume als Mengen">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Mengen: builtins enthält global enthält lokal -->
+        <mxCell id="builtins" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="800" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="lBuiltins" value="&lt;b&gt;builtins&lt;/b&gt;: eingebaute Namen" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="global" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="580" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="lGlobal" value="&lt;b&gt;global&lt;/b&gt;: Namen im Notebook bzw. in der Datei" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="local" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="340" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="lLocal" value="&lt;b&gt;lokal&lt;/b&gt;: Namen innerhalb der Funktion &lt;font face=&quot;Menlo&quot;&gt;gross_price&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="118" width="310" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="lLocalNote" value="entsteht beim Aufruf,&lt;br&gt;verschwindet nach return" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="300" height="44" as="geometry" />
+        </mxCell>
+        <!-- Elemente -->
+        <mxCell id="nNet" value="net_price = 100" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="175" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nTax" value="tax = 19.0" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nVat" value="VAT_RATE = 0.19" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="175" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nFunc" value="gross_price" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="220" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nPrint" value="print" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="640" y="130" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nLen" value="len" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="640" y="175" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRound" value="round" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="640" y="220" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nDots" value="und viele mehr" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="640" y="265" width="140" height="30" as="geometry" />
+        </mxCell>
+        <!-- Suche -->
+        <mxCell id="sTitle" value="Python sucht von innen nach außen, der erste Treffer gewinnt:" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="400" width="800" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="&lt;font face=&quot;Menlo&quot;&gt;VAT_RATE&lt;/font&gt; in der Funktion:&amp;nbsp; lokal nein → global &lt;b&gt;gefunden&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="435" width="780" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="&lt;font face=&quot;Menlo&quot;&gt;round&lt;/font&gt; in der Funktion:&amp;nbsp; lokal nein → global nein → builtins &lt;b&gt;gefunden&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="468" width="780" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="&lt;font face=&quot;Menlo&quot;&gt;print(tax)&lt;/font&gt; außerhalb der Funktion:&amp;nbsp; global nein → builtins nein → &lt;b&gt;NameError&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="20" y="501" width="780" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="s3note" value="&lt;font face=&quot;Menlo&quot;&gt;tax&lt;/font&gt; ist lokal: Von außen schaut Python nicht in die Funktion hinein." style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="760" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
