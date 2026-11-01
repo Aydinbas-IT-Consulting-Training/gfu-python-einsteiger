@@ -61,6 +61,12 @@
         <mxCell id="s2" value="&lt;font face=&quot;Menlo&quot;&gt;round&lt;/font&gt; in der Funktion:&amp;nbsp; lokal nein → global nein → builtins &lt;b&gt;gefunden&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="20" y="468" width="780" height="28" as="geometry" />
         </mxCell>
+        <mxCell id="s3" value="&lt;font face=&quot;Menlo&quot;&gt;print(tax)&lt;/font&gt; außerhalb der Funktion:&amp;nbsp; global nein → builtins nein → &lt;b&gt;NameError&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="20" y="501" width="780" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="s3note" value="&lt;font face=&quot;Menlo&quot;&gt;tax&lt;/font&gt; ist lokal: Von außen schaut Python nicht in die Funktion hinein." style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="760" height="24" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
