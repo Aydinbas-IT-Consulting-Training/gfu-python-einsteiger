@@ -1,0 +1,58 @@
+<mxfile host="drawio">
+  <diagram id="match-liste" name="match mit Liste">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="user_input = &quot;move 3 4&quot;" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lrow1" value="&lt;font face=&quot;Menlo&quot;&gt;user_input.split()&lt;/font&gt;" style="text;html=1;align=right;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="60" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lrow2" value="Muster im &lt;font face=&quot;Menlo&quot;&gt;case&lt;/font&gt;" style="text;html=1;align=right;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="180" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w0" value="&quot;move&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="220" y="60" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w1" value="&quot;3&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="330" y="60" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w2" value="&quot;4&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="440" y="60" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p0" value="&quot;move&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="225" y="180" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" value="x" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="335" y="180" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="y" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="445" y="180" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="==" style="endArrow=classic;html=1;strokeColor=#333333;fontSize=16;fontFamily=Menlo;fontColor=#000000;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="w0" target="p0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="x = &quot;3&quot;" style="endArrow=classic;html=1;strokeColor=#333333;fontSize=16;fontFamily=Menlo;fontColor=#000000;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="w1" target="p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="y = &quot;4&quot;" style="endArrow=classic;html=1;strokeColor=#333333;fontSize=16;fontFamily=Menlo;fontColor=#000000;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="w2" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="res" value="Gehe nach (3, 4)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="620" y="180" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lres" value="Muster passt, Ausgabe:" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="600" y="140" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eres" value="" style="endArrow=classic;html=1;strokeColor=#333333;" edge="1" parent="1" source="p2" target="res">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="fester Wert: muss genau gleich sein · Name: nimmt das Wort an dieser Stelle auf" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="250" width="800" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

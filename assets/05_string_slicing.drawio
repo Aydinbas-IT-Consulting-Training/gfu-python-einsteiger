@@ -1,0 +1,76 @@
+<mxfile host="drawio">
+  <diagram id="string-slicing" name="String-Slicing">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="word[1:4]  → &quot;yth&quot;" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lcut" value="Schnittstellen" style="text;html=1;align=right;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c0" value="P" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=22;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="140" y="85" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="y" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=22;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="200" y="85" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="t" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=22;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="260" y="85" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="h" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=22;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="320" y="85" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="o" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=22;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="380" y="85" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="n" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=22;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="440" y="85" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b0" value="0" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="125" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="2" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="245" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="3" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="305" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" value="4" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" value="5" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="425" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" value="6" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="485" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cutL" value="" style="endArrow=none;html=1;strokeColor=#b85450;strokeWidth=3;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="78" as="sourcePoint" />
+            <mxPoint x="200" y="185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cutR" value="" style="endArrow=none;html=1;strokeColor=#b85450;strokeWidth=3;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="78" as="sourcePoint" />
+            <mxPoint x="380" y="185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="span" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="204" y="170" as="sourcePoint" />
+            <mxPoint x="376" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note" value="Start 1 gehört dazu, Ende 4 nicht mehr:&lt;br&gt;4 - 1 = 3 Zeichen" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="140" y="195" width="380" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

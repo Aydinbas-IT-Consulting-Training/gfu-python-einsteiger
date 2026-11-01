@@ -1,0 +1,106 @@
+<mxfile host="drawio">
+  <diagram id="zeitpunkt-zeitspanne" name="Zeitpunkt und Zeitspanne">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="code" value="start = datetime(2026, 11, 16, 9, 0)&lt;br&gt;end = datetime(2026, 11, 16, 16, 30)&lt;br&gt;duration = end - start" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="460" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nstart" value="start" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="75" y="100" width="90" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="nend" value="end" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="645" y="100" width="90" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="vstart" value="2026-11-16 09:00:00" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="10" y="166" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="vend" value="2026-11-16 16:30:00" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="580" y="166" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="tpoint" value="Zeitpunkte (&lt;font face=&quot;Menlo&quot;&gt;datetime&lt;/font&gt;)" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="250" y="166" width="310" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="nstart" target="vstart">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="nend" target="vend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="span" value="duration&amp;nbsp;&amp;nbsp;7:30:00&amp;nbsp;&amp;nbsp;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size:16px&quot; color=&quot;#333333&quot;&gt;Zeitspanne (&lt;/font&gt;timedelta&lt;font face=&quot;Helvetica&quot; style=&quot;font-size:16px&quot; color=&quot;#333333&quot;&gt;)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="120" y="228" width="570" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" style="endArrow=none;html=1;strokeColor=#666666;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="202" as="sourcePoint" />
+            <mxPoint x="120" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2" style="endArrow=none;html=1;strokeColor=#666666;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="202" as="sourcePoint" />
+            <mxPoint x="690" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axis" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="300" as="sourcePoint" />
+            <mxPoint x="790" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#6c8ebf;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="113" y="293" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#6c8ebf;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="683" y="293" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="h08" value="08:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="19" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h09" value="09:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="95" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h10" value="10:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="171" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h11" value="11:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="247" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h12" value="12:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="323" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h13" value="13:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="399" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h14" value="14:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="475" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h15" value="15:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="551" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h16" value="16:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="627" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h17" value="17:00" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="703" y="310" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ddate" value="2026-11-16" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="10" y="360" width="150" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="dtime" value="09:00:00" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="160" y="360" width="150" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ldate" value="start.date()&lt;br&gt;&lt;font face=&quot;Helvetica&quot; color=&quot;#333333&quot;&gt;Datum (&lt;/font&gt;date&lt;font face=&quot;Helvetica&quot; color=&quot;#333333&quot;&gt;)&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=top;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="400" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ltime" value="start.time()&lt;br&gt;&lt;font face=&quot;Helvetica&quot; color=&quot;#333333&quot;&gt;Uhrzeit (&lt;/font&gt;time&lt;font face=&quot;Helvetica&quot; color=&quot;#333333&quot;&gt;)&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=top;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="160" y="400" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lsplit" value="Ein Zeitpunkt besteht aus Datum und Uhrzeit. &lt;font face=&quot;Menlo&quot;&gt;datetime.combine()&lt;/font&gt; fügt beides wieder zusammen." style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="340" y="352" width="440" height="52" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

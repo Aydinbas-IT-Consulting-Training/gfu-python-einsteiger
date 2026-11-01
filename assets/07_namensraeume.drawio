@@ -1,0 +1,52 @@
+<mxfile host="drawio">
+  <diagram id="namensraeume" name="Namensräume">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="add_bonus(my_scores)" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fglobal" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="50" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lglobal" value="draußen (global)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="10" y="55" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nglobal" value="my_scores" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="95" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flocal" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="180" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="llocal" value="in add_bonus (lokal, nur während des Aufrufs)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="10" y="183" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nlocal" value="scores" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="227" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c0" value="80" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="460" y="140" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="90" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="100" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="600" y="140" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="llist" value="eine Liste" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="460" y="105" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lappend" value="&lt;font face=&quot;Menlo&quot;&gt;scores.append(100)&lt;/font&gt;&lt;br&gt;ändert diese Liste,&lt;br&gt;also auch &lt;font face=&quot;Menlo&quot;&gt;my_scores&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="460" y="205" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eg" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="nglobal" target="c0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="nlocal" target="c0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -222,3 +222,6 @@ __marimo__/
 # Dateien, die in den Notebooks per %%writefile entstehen
 notebooks/*.py
 loesungen/*.py
+
+# Foliensätze des Trainers liegen außerhalb des Repos
+*.pptx

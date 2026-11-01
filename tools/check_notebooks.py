@@ -21,12 +21,15 @@ import builtins
 import itertools
 
 _fields = itertools.cycle("123456789")
+_tips = itertools.cycle(range(1, 101))
 
 
 def _fake_input(prompt=""):
     print(prompt, end="")
     if "Feld" in prompt:
         return next(_fields)
+    if "Tipp" in prompt:
+        return str(next(_tips))
     if "Operator" in prompt:
         return "+"
     if "heißt" in prompt or "Name" in prompt:

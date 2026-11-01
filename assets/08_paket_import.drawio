@@ -1,0 +1,89 @@
+<mxfile host="drawio">
+  <diagram id="paket-import" name="Paket-Import">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kfrom" value="from" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ishop" value="shop" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="60" y="0" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kdot" value="." style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="140" y="0" width="20" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ipricing" value="pricing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="160" y="0" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kimport" value="import" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="270" y="0" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="inames" value="gross_price, VAT_RATE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="360" y="0" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fbsp" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="100" width="660" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="lbsp" value="&lt;font face=&quot;Menlo&quot; style=&quot;font-size: 18px;&quot;&gt;beispiele/&lt;/font&gt;  Ordner aus &lt;font face=&quot;Menlo&quot;&gt;sys.path&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="240" y="108" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fshop" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="20" y="150" width="620" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="lshop" value="&lt;font face=&quot;Menlo&quot; style=&quot;font-size: 18px;&quot;&gt;shop/&lt;/font&gt;  Paket" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="30" y="155" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="finit" value="__init__.py" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="145" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="finvoice" value="invoice.py" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="145" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="fpricing" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="200" y="195" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="lpricing" value="&lt;font face=&quot;Menlo&quot; style=&quot;font-size: 18px;&quot;&gt;pricing.py&lt;/font&gt;  Modul" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="210" y="200" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nvat" value="VAT_RATE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="230" y="245" width="150" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ngross" value="gross_price" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="230" y="305" width="150" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="fgreet" value="greetings.py" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="20" y="400" width="165" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="eshop" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="40" as="sourcePoint" />
+            <mxPoint x="100" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="epricing" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="215" y="40" as="sourcePoint" />
+            <mxPoint x="215" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evat" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" parent="1" target="nvat">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="625" y="40" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="625" y="263" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egross" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" parent="1" target="ngross">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="40" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="600" y="323" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

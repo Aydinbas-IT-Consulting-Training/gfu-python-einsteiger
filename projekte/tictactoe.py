@@ -1,4 +1,4 @@
-"""Tic-Tac-Toe für zwei Spieler im Terminal (Lösung zu Notebook 10).
+"""Tic-Tac-Toe für zwei Spieler im Terminal (Lösung zu Notebook 14).
 
 Nach Inden, *Einstieg in Python*, Kapitel 13.
 

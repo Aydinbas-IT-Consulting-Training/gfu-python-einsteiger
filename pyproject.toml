@@ -3,9 +3,11 @@ name = "gfu-python-einsteiger"
 version = "0.1.0"
 description = "GFU-Schulung s2099: Python für Programmier-Anfänger"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.15"
 dependencies = [
     "ipykernel>=6.29",
+    "pytest>=8.3",
+    "tzdata>=2025.2",  # Zeitzonen für zoneinfo unter Windows
 ]
 
 [dependency-groups]
@@ -15,6 +17,14 @@ dev = [
     "ruff>=0.9",
 ]
 
+[tool.pytest.ini_options]
+pythonpath = ["projekte"]  # Notebook 14 testet projekte/tictactoe.py
+testpaths = ["testen"]
+
 [tool.ruff]
 line-length = 88
 extend-exclude = ["*.ipynb"]  # Notebooks enthalten absichtliche Fehlerbeispiele
+src = [".", "projekte", "testen"]
+
+[tool.ruff.lint.per-file-ignores]
+"testen/*" = ["PLR0133"]  # Vergleiche von Konstanten zeigen, wie assert arbeitet

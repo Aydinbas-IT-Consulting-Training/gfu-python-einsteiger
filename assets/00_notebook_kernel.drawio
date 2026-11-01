@@ -1,0 +1,56 @@
+<mxfile host="drawio">
+  <diagram id="notebook-kernel" name="Notebook und Kernel">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Notebook -->
+        <mxCell id="nb" value="Notebook" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Helvetica;fontColor=#333333;align=left;verticalAlign=top;spacingLeft=10;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="420" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="[1]" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="5" y="45" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cell1" value="result = 7 * 6&lt;br&gt;print(&quot;7 * 6 =&quot;, result)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="45" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="out1" value="7 * 6 = 42" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#333333;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="108" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="[2]" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="5" y="160" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cell2" value="result" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="160" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="out2" value="42" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#333333;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="203" width="350" height="30" as="geometry" />
+        </mxCell>
+        <!-- Kernel -->
+        <mxCell id="kernel" value="Kernel: führt den Code aus&lt;br&gt;und merkt sich die Namen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Helvetica;fontColor=#333333;align=left;verticalAlign=top;spacingLeft=10;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="560" y="0" width="240" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="name" value="result" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="580" y="115" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="val" value="42" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="720" y="115" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nv" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="name" target="val">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Zellen sprechen mit dem Kernel -->
+        <mxCell id="e1" value="[1] legt an" style="endArrow=classic;html=1;strokeColor=#333333;fontSize=14;fontFamily=Helvetica;fontColor=#333333;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.25;" edge="1" parent="1" source="cell1" target="name">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="[2] liest" style="endArrow=classic;html=1;strokeColor=#333333;fontSize=14;fontFamily=Helvetica;fontColor=#333333;labelBackgroundColor=#ffffff;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" edge="1" parent="1" source="cell2" target="name">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Hinweis -->
+        <mxCell id="note" value="Kernel → Restart leert den Speicher. Läuft danach [2] vor [1]: NameError" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="0" y="265" width="800" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

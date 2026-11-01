@@ -1,0 +1,58 @@
+<mxfile host="drawio">
+  <diagram id="dictionary" name="Dictionary">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="capitals = {&quot;CH&quot;: &quot;Bern&quot;, &quot;DE&quot;: &quot;Berlin&quot;, &quot;GB&quot;: &quot;London&quot;}" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="700" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hk" value="Schlüssel" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="230" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hv" value="Werte" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="430" y="50" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k0" value="&quot;CH&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="230" y="85" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="k1" value="&quot;DE&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="230" y="145" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="k2" value="&quot;GB&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="230" y="205" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="v0" value="&quot;Bern&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="430" y="85" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="v1" value="&quot;Berlin&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="430" y="145" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="v2" value="&quot;London&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="430" y="205" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="k0" target="v0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="k1" target="v1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="k2" target="v2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lookup" value="capitals[&quot;DE&quot;]" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="145" width="170" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="elookup" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="lookup" target="k1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="result" value="→ &quot;Berlin&quot;" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="145" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Gesucht wird immer über den Schlüssel; jeder Schlüssel kommt nur einmal vor." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="270" width="760" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
