@@ -35,6 +35,22 @@ erklärt, worum es geht und wie du sie startest.
 `demo_fehlschlaege.py` und `loesung_test_uebungen.py` folgen der Regel absichtlich
 nicht: pytest sammelt sie nicht von selbst ein, du startest sie mit ihrem Namen.
 
+**Kurzübung 1 (Ein Test verschwindet):** Starte `uv run pytest test_00_assert.py -v`
+und zähle die Tests. Benenne dann in `test_00_assert.py` die Funktion
+`test_numbers` in `check_numbers` um und starte erneut. Wie viele Tests laufen
+jetzt, und warum meldet pytest keinen Fehler? Mache die Umbenennung danach
+rückgängig.
+
+<details>
+<summary>Lösung</summary>
+
+Erst 6 Tests, danach 5. `check_numbers` beginnt nicht mit `test_`, also hält
+pytest die Funktion für eine Hilfsfunktion und führt sie gar nicht aus. Das ist
+kein Fehler, sondern still fehlender Schutz: Ein falsch benannter Test fällt
+nur auf, wenn du die Anzahl im Blick hast.
+
+</details>
+
 ## Tests starten
 
 Alle Befehle im Ordner `testen` ausführen:
@@ -58,6 +74,25 @@ cd testen
 Im Hauptordner des Kursprojekts startet `uv run pytest` ebenfalls genau diese
 Tests: `pyproject.toml` legt das mit `testpaths` fest.
 
+**Kurzübung 2 (Nur die Rabatt-Tests):** Starte aus `test_01_grundlagen.py` nur
+die Tests, deren Name `discount` enthält, und lass dir jeden Test einzeln
+anzeigen. Wie viele laufen? Die Datei hat nur zwei Testfunktionen mit
+`discount` im Namen: Woher kommen die übrigen?
+
+<details>
+<summary>Lösung</summary>
+
+```bash
+uv run pytest test_01_grundlagen.py -k discount -v
+```
+
+7 Tests laufen, 5 werden abgewählt (`deselected`). `parametrize` führt
+`test_discount` viermal und `test_invalid_discount_is_rejected` dreimal aus,
+einmal pro Fall; `-v` zeigt die Fälle in eckigen Klammern, etwa
+`test_discount[100-10-90.0]`.
+
+</details>
+
 ## Die Ausgabe lesen
 
 ```text
@@ -78,23 +113,71 @@ test_03_organisieren.py .....ssx                           [100%]
 Bei einem roten Test zeigt pytest die Zeile, beide Seiten des Vergleichs und bei
 Listen, Dictionaries und Strings genau die Stelle, an der sie sich unterscheiden.
 
+**Kurzübung 3 (Einen Test rot machen):** Ändere in `test_01_grundlagen.py` in
+`test_gross_price_standard_rate` den erwarteten Wert von `119.0` auf `120.0`
+und starte die Datei. Welches Zeichen steht in der Fortschrittszeile, und in
+welchen Zeilen der Ausgabe liest du den tatsächlichen Wert ab? Setze den Wert
+danach zurück.
+
+<details>
+<summary>Lösung</summary>
+
+Die Fortschrittszeile zeigt `F...........`: der erste Test rot, die übrigen elf
+grün. Unter `FAILURES` stehen die Zeilen mit `E`:
+
+```text
+E       assert 119.0 == 120.0
+E        +  where 119.0 = gross_price(100)
+```
+
+Links steht der tatsächliche Wert, rechts der erwartete; die `where`-Zeile
+verrät, woher die 119.0 kommt.
+
+</details>
+
 ## Übungen
 
-Schreibe deine Tests in eine neue Datei `test_uebungen.py`.
+Schreibe deine Tests in eine neue Datei `test_uebungen.py`. Die Funktionen, die
+du testest, stehen in `uebungen.py`.
 
-1. **count() test-first (leicht):** Ergänze `ShoppingCart` in `prices.py` um
-   eine Methode `count()`, die die Anzahl der Produkte liefert. Schreibe den
-   Test zuerst, sieh ihn rot werden, dann schreibe die Methode.
-2. **Tests für eine Funktion mit verstecktem Fehler (mittel):**
-   `late_fee(due, returned)` in `uebungen.py` ist Code, den eine KI geschrieben
-   haben könnte (präpariert, ein Fehler eingebaut): Er berechnet die
-   Mahngebühr der Bibliothek, 0,50 € pro Tag Verspätung, höchstens 10 €,
-   Rückgabe am Fälligkeitstag kostenlos. Schreibe Tests mit `parametrize` und
-   `date`-Objekten für normale Fälle und Grenzen, bis einer den Fehler aufdeckt.
-3. **Eingabe und Ausgabe testen (schwer):** `ask_quantity()` in `uebungen.py`
-   fragt so lange nach einer Menge, bis eine ganze Zahl kommt, und meldet
-   ungültige Eingaben. Teste sie: Ersetze `input` mit `monkeypatch` durch
-   vorgegebene Antworten (`"drei"`, `"3"`) und prüfe mit `capsys` die Meldung.
+**Übung 1 (count() test-first, leicht):** Ergänze `ShoppingCart` in `prices.py`
+um eine Methode `count()`, die die Anzahl der Produkte liefert. Schreibe den
+Test zuerst, sieh ihn rot werden, dann schreibe die Methode. Die Fixture `cart`
+aus `conftest.py` liefert dir einen leeren Warenkorb.
+
+**Übung 2 (Preise aus dem Kassenbon, leicht):** `parse_price(text)` wandelt
+einen Preis wie `"4,99 €"` in die Zahl `4.99` um und löst bei Text wie
+`"gratis"` einen `ValueError` aus. Prüfe mit einem einzigen Test und
+`parametrize` mindestens vier Eingaben, etwa `"4,99 €"`, `"12 €"`, `"0,50"` und
+`" 3,20 € "`. Schreibe dazu einen Test mit `pytest.raises`, der den Fehler bei
+`"gratis"` prüft.
+
+**Übung 3 (Einkaufsliste aus einer Datei, leicht):** `read_shopping_list(path)`
+liest eine Textdatei mit einem Eintrag pro Zeile und lässt Leerzeilen und
+Leerzeichen am Rand weg. Teste sie, ohne eine echte Datei anzulegen: Schreibe
+mit der Fixture `tmp_path` eine kleine Liste mit einer Leerzeile in eine Datei
+und prüfe das Ergebnis.
+
+**Übung 4 (Tests für eine Funktion mit verstecktem Fehler, mittel):**
+`late_fee(due, returned)` ist Code, den eine KI geschrieben haben könnte
+(präpariert, ein Fehler eingebaut): Er berechnet die Mahngebühr der
+Bibliothek, 0,50 € pro Tag Verspätung, höchstens 10 €, Rückgabe am
+Fälligkeitstag kostenlos. Schreibe Tests mit `parametrize` und `date`-Objekten
+für normale Fälle und Grenzen, bis einer den Fehler aufdeckt. Erkläre den
+Fehler in einem Satz und behebe ihn.
+
+**Übung 5 (Durchschnitt einer leeren Liste, mittel):** `average(numbers)`
+liefert den Durchschnitt einer Liste. Teste zwei normale Fälle. Überlege dann,
+was bei einer leeren Liste passieren soll, und schreibe einen Test, der einen
+`ValueError` mit einer verständlichen Meldung verlangt. Markiere ihn mit
+`xfail`, solange `average()` noch falsch reagiert. Korrigiere dann die
+Funktion. Welches Zeichen zeigt die Ausgabe vor der Korrektur, welches danach?
+Was tust du mit der Markierung, sobald die Funktion stimmt?
+
+**Übung 6 (Eingabe und Ausgabe testen, schwer):** `ask_quantity()` fragt so
+lange nach einer Menge, bis eine ganze Zahl kommt, und meldet ungültige
+Eingaben. Teste sie: Ersetze `input` mit `monkeypatch` durch vorgegebene
+Antworten (`"drei"`, `"3"`) und prüfe mit `capsys` die Meldung.
 
 Die Musterlösung steht in `loesung_test_uebungen.py`.
 
