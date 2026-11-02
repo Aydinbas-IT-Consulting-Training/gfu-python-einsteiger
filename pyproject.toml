@@ -5,6 +5,7 @@ description = "GFU-Schulung s2099: Python für Programmier-Anfänger"
 readme = "README.md"
 requires-python = ">=3.15"
 dependencies = [
+    "colabturtle>=2.1",  # Turtle-Grafik direkt im Notebook
     "ipykernel>=6.29",
     "pytest>=8.3",
     "tzdata>=2025.2",  # Zeitzonen für zoneinfo unter Windows
