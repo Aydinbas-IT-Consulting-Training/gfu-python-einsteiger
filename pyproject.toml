@@ -18,6 +18,9 @@ dev = [
     "ruff>=0.9",
 ]
 
+[tool.uv]
+compile-bytecode = true  # sonst zeigt ColabTurtle beim ersten Import eine SyntaxWarning im Notebook
+
 [tool.pytest.ini_options]
 pythonpath = ["projekte"]  # Notebook 14 testet projekte/tictactoe.py
 testpaths = ["testen"]
