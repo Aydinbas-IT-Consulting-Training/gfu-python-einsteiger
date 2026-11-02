@@ -31,7 +31,7 @@ Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
 | --- | --- | --- |
 | 00 | Einführung, Setup, Stil (PEP 8) | 1, 2 |
 | 01 | Variablen und Datentypen | 2 |
-| 02 | Python unter der Haube | – |
+| 02 | Python unter der Haube (optional) | – |
 | 03 | Operatoren und Bedingungen | 2, 6 |
 | 04 | Schleifen | 2, 6 |
 | 05 | Strings | 3 |

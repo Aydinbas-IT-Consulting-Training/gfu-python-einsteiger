@@ -1,7 +1,8 @@
 """Führt alle Lösungs-Notebooks aus und meldet unerwartete Fehler.
 
 Zellen, die absichtlich einen Fehler zeigen, tragen den Tag ``raises-exception``.
-``input()`` wird durch feste Antworten ersetzt, damit nichts blockiert.
+``input()`` wird durch feste Antworten ersetzt, damit nichts blockiert, und
+Turtle-Zeichnungen laufen ohne Wartezeit.
 
 Aufruf: ``uv run python tools/check_notebooks.py``
 """
@@ -39,6 +40,11 @@ def _fake_input(prompt=""):
 
 builtins.input = _fake_input
 get_ipython().kernel.raw_input = _fake_input
+
+# Turtle-Zeichnungen ohne Wartezeit, sonst dauert die Prüfung minutenlang
+import ColabTurtle.Turtle
+
+ColabTurtle.Turtle.SPEED_TO_SEC_MAP = dict.fromkeys(ColabTurtle.Turtle.SPEED_TO_SEC_MAP, 0)
 """
 
 
