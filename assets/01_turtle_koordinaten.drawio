@@ -1,0 +1,86 @@
+<mxfile host="drawio">
+  <diagram id="turtle_koordinaten" name="turtle_koordinaten">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Zeichenfläche 800 x 500, hier im Maßstab 0,6 -->
+        <mxCell id="canvas" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="480" height="300" as="geometry" />
+        </mxCell>
+
+        <!-- Ecken -->
+        <mxCell id="origin" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="54" y="34" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="c_tl" value="(0, 0)" style="text;html=1;align=right;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="6" width="80" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c_tr" value="(800, 0)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="500" y="6" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c_bl" value="(0, 500)" style="text;html=1;align=right;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="350" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c_br" value="(800, 500)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="350" width="110" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- Start in der Mitte, Blick nach oben -->
+        <mxCell id="turtle" value="" style="triangle;direction=north;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="289" y="176" width="22" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="turtle_label" value="(400, 250): Start,&lt;br&gt;Blick nach oben" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="190" y="210" width="220" height="44" as="geometry" />
+        </mxCell>
+
+        <!-- Beispielpunkt goto(600, 100) -->
+        <mxCell id="dash_x" value="" style="endArrow=none;html=1;dashed=1;strokeColor=#6c8ebf;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="40" as="sourcePoint" />
+            <mxPoint x="420" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dash_y" value="" style="endArrow=none;html=1;dashed=1;strokeColor=#6c8ebf;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="100" as="sourcePoint" />
+            <mxPoint x="420" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="point" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="414" y="94" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="point_label" value="goto(600, 100)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="108" width="140" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="x_value" value="x = 600" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="380" y="12" width="80" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="y_value" value="y = 100" style="text;html=1;align=right;verticalAlign=middle;fontSize=14;fontFamily=Menlo;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="89" width="84" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Achsen -->
+        <mxCell id="x_axis" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="392" as="sourcePoint" />
+            <mxPoint x="540" y="392" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_axis_label" value="x wächst nach rechts" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="398" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="y_axis" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="40" as="sourcePoint" />
+            <mxPoint x="570" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y_axis_label" value="y wächst&lt;br&gt;nach unten" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="580" y="168" width="100" height="44" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
