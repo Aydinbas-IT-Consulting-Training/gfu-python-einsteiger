@@ -45,6 +45,7 @@ Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
 | 13 | Testen mit pytest (Ordner `testen/`, Bonus) | 16 |
 | 14 | Abschlussprojekt Tic-Tac-Toe | 13, 16 |
 | 15 | Datenanalyse mit pandas (Ausblick) | – |
+| 16 | Excel mit openpyxl (Ausblick) | – |
 
 00 bis 07 sind der Kern des Kurses und werden vollständig behandelt. Ab 08 wählen wir im Kurs aus; was offen bleibt, eignet sich zum Weiterlernen nach dem Kurs. Klassen (12) und Tests (13, Schritt 6 im Abschlussprojekt) sind ein Ausblick.
 

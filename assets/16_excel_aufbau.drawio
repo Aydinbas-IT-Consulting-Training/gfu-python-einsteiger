@@ -1,0 +1,136 @@
+<mxfile host="drawio">
+  <diagram id="excel-aufbau" name="Excel-Aufbau">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="corner" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="60" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="colA" value="A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="colB" value="B" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="170" y="60" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="colC" value="C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="280" y="60" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="colD" value="D" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="390" y="60" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row1" value="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="90" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row2" value="2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="120" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row3" value="3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="150" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row4" value="4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="180" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row5" value="5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="210" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row6" value="6" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="240" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" value="Umsatzbericht 2026 nach Filialen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="90" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="Stand: 30.09.2026, Beträge in Euro" style="rounded=0;whiteSpace=nowrap;overflow=visible;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B2" value="" style="rounded=0;html=1;fillColor=none;strokeColor=#bbbbbb;" vertex="1" parent="1">
+          <mxGeometry x="170" y="120" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C2" value="" style="rounded=0;html=1;fillColor=none;strokeColor=#bbbbbb;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2" value="" style="rounded=0;html=1;fillColor=none;strokeColor=#bbbbbb;" vertex="1" parent="1">
+          <mxGeometry x="390" y="120" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="170" y="150" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="150" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="150" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A4" value="Filiale" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B4" value="Region" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="180" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C4" value="Jan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="180" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D4" value="Feb" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="180" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A5" value="Köln" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="210" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B5" value="NRW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="170" y="210" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C5" value="142916" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=right;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="210" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D5" value="163882" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=right;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="210" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A6" value="Bonn" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B6" value="NRW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="170" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C6" value="82380" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=right;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D6" value="90384" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=15;fontFamily=Helvetica;align=right;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="range" value="" style="rounded=0;html=1;fillColor=none;strokeColor=#d79b00;strokeWidth=3;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cellA5" value="" style="rounded=0;html=1;fillColor=none;strokeColor=#82b366;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="210" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tab1" value="Umsatz 2026" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=14;fontFamily=Helvetica;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="276" width="130" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tab2" value="Ziele" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontFamily=Helvetica;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="170" y="276" width="80" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="Workbook (Datei) → Worksheet (Blatt) → Cell (Zelle)" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="760" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lmerged" value="A1 bis D1 verbunden: eine Zelle über mehrere Spalten" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="530" y="90" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lcell" value='ws["A5"].value  →  "Köln"' style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#4d7a3a;" vertex="1" parent="1">
+          <mxGeometry x="530" y="204" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lrange" value='ws["A4:B6"]  →  3 Zeilen mit je 2 Zellen' style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#b07800;" vertex="1" parent="1">
+          <mxGeometry x="530" y="244" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ltabs" value='wb["Umsatz 2026"]: ein Blatt der Datei' style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Menlo;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="530" y="276" width="430" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Spalten heißen A, B, C …, Zeilen zählen ab 1, nicht ab 0 wie in Python. Eine Zelladresse ist Spalte + Zeile: A5." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="326" width="1000" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
