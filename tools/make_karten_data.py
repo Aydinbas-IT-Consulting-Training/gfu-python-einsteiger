@@ -17,7 +17,7 @@ Ergebnis in ``daten/``:
 
 - ``kreise.gpkg``: Umrisse der Kreise, Koordinaten unverändert in Metern (EPSG:25832).
   Die Länder entstehen im Notebook aus den Kreisen.
-- ``kreise_bevoelkerung.csv``: Fläche und Einwohner je Kreis, deutsches CSV-Format.
+- ``kreise_bevoelkerung.csv``: Bundesland, Fläche und Einwohner je Kreis, deutsches CSV-Format.
 - ``filialen.csv``: Lage der Filialen aus ``umsatz_filialen.xlsx`` (Stadtmitte).
 
 Aufruf: ``uv run python tools/make_karten_data.py <vg2500.zip> <04-kreise.xlsx>``
@@ -57,16 +57,20 @@ def read_districts(zip_path: Path) -> gpd.GeoDataFrame:
 def write_population(xlsx_path: Path, keys: set[str]) -> None:
     ws = load_workbook(xlsx_path, read_only=True)["Kreisfreie Städte u. Landkreise"]
     rows = []
+    state = None
     for row in ws.iter_rows(min_row=3, values_only=True):
-        key, _, name, _, area, population = row[:6]
+        key, label, name, _, area, population = row[:6]
+        # Zeilen mit zweistelligem Schlüssel sind Überschriften der Länder
+        if isinstance(key, str) and len(key) == 2:
+            state = label
         if isinstance(key, str) and len(key) == 5 and population is not None:
-            rows.append([key, name, f"{area:.2f}".replace(".", ","), population])
+            rows.append([key, name, state, f"{area:.2f}".replace(".", ","), population])
     missing = keys - {row[0] for row in rows}
     if missing:
         raise SystemExit(f"Kreise ohne Bevölkerung: {sorted(missing)}")
     with open(DATA_DIR / "kreise_bevoelkerung.csv", "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f, delimiter=";", lineterminator="\n")
-        writer.writerow(["Schluessel", "Kreis", "Flaeche_km2", "Einwohner"])
+        writer.writerow(["Schluessel", "Kreis", "Bundesland", "Flaeche_km2", "Einwohner"])
         writer.writerows(rows)
 
 
