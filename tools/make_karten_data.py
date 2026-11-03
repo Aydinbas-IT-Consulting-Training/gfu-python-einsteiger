@@ -3,8 +3,10 @@
 Quellen (vorher herunterladen, Pfade als Argumente übergeben):
 
 - Verwaltungsgebiete 1:2 500 000 (VG2500, Stand 31.12.2022), ZIP mit Shapefiles:
-  https://gdz.bkg.bund.de, Lizenz Datenlizenz Deutschland – Namensnennung – 2.0,
-  Quellenvermerk "© GeoBasis-DE / BKG (2023) (Daten verändert)".
+  https://daten.gdz.bkg.bund.de/produkte/vg/vg2500/2022/vg2500_12-31.utm32s.shape.zip,
+  Lizenz Datenlizenz Deutschland – Namensnennung – 2.0, Quellenvermerk
+  "© GeoBasis-DE / BKG (2023) (Daten verändert)". Verändert: nur Landflächen,
+  nur Schlüssel, Name und Art, Koordinaten in Grad, gerundet auf 5 Nachkommastellen.
 - Gemeindeverzeichnis, Kreisfreie Städte und Landkreise nach Fläche und Bevölkerung
   (31.12.2024), ``04-kreise.xlsx``:
   https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/04-kreise.xlsx,

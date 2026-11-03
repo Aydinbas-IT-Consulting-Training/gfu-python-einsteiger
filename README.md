@@ -100,4 +100,7 @@ braucht man die [draw.io-Desktop-App](https://www.drawio.com); ändere die `.dra
 
 Der Kurs unterrichtet Python 3.15 (siehe `.python-version`); `uv sync` installiert es bei Bedarf.
 
-`daten/faust.txt` stammt von Project Gutenberg. `daten/kreise.geojson` und `daten/laender.geojson`: © GeoBasis-DE / BKG (2023) (Daten verändert), [Datenlizenz Deutschland – Namensnennung – 2.0](https://www.govdata.de/dl-de/by-2-0). `daten/kreise_bevoelkerung.csv`: © Statistisches Bundesamt (Destatis), 2025, Gemeindeverzeichnis.
+`daten/faust.txt` stammt von Project Gutenberg. Die Kartendaten für Notebook 17 entstehen mit `tools/make_karten_data.py`:
+
+- `daten/kreise.geojson`, `daten/laender.geojson`: © GeoBasis-DE / BKG (2023) (Daten verändert), [Datenlizenz Deutschland – Namensnennung – 2.0](https://www.govdata.de/dl-de/by-2-0). Quelle: Verwaltungsgebiete 1:2 500 000 (VG2500), Stand 31.12.2022, [vg2500_12-31.utm32s.shape.zip](https://daten.gdz.bkg.bund.de/produkte/vg/vg2500/2022/vg2500_12-31.utm32s.shape.zip). Verändert: nur Landflächen, nur Schlüssel, Name und Art, Koordinaten in Grad umgerechnet und auf fünf Nachkommastellen gerundet, als GeoJSON gespeichert.
+- `daten/kreise_bevoelkerung.csv`: © Statistisches Bundesamt (Destatis), 2025. Quelle: Gemeindeverzeichnis, Kreisfreie Städte und Landkreise nach Fläche, Bevölkerung und Bevölkerungsdichte, Stand 31.12.2024, [04-kreise.xlsx](https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/04-kreise.xlsx?__blob=publicationFile). Übernommen: Schlüssel, Name, Fläche, Einwohner.
