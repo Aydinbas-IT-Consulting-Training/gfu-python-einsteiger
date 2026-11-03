@@ -65,13 +65,13 @@
         <mxCell id="crs1" value="EPSG:4326 · Länge und Breite in Grad" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
           <mxGeometry x="0" y="355" width="460" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="crs1n" value="weltweit, zum Speichern und für Webkarten" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="crs1n" value="weltweit, wie bei Navi und Webkarten" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="480" y="355" width="460" height="40" as="geometry" />
         </mxCell>
         <mxCell id="crs2" value="EPSG:25832 · x und y in Metern" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
           <mxGeometry x="0" y="400" width="460" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="crs2n" value="für Deutschland, zum Rechnen (km²) und Zeichnen" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="crs2n" value="Vermessungsämter in Deutschland, rechnet in m und km²" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="480" y="400" width="460" height="40" as="geometry" />
         </mxCell>
       </root>

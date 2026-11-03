@@ -40,7 +40,7 @@
         <mxCell id="r0b" value="Darmstadt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
           <mxGeometry x="190" y="124" width="230" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="r0c" value="POLYGON ((8.56 49.84, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
+        <mxCell id="r0c" value="POLYGON ((468542 5521287, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
           <mxGeometry x="420" y="124" width="340" height="44" as="geometry" />
         </mxCell>
         <mxCell id="r1a" value="06412" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
@@ -49,7 +49,7 @@
         <mxCell id="r1b" value="Frankfurt am Main" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
           <mxGeometry x="190" y="168" width="230" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="r1c" value="POLYGON ((8.79 50.18, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
+        <mxCell id="r1c" value="POLYGON ((485010 5558205, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
           <mxGeometry x="420" y="168" width="340" height="44" as="geometry" />
         </mxCell>
         <mxCell id="r2a" value="06532" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
@@ -58,7 +58,7 @@
         <mxCell id="r2b" value="Lahn-Dill-Kreis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
           <mxGeometry x="190" y="212" width="230" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="r2c" value="POLYGON ((8.36 50.86, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
+        <mxCell id="r2c" value="POLYGON ((454659 5634661, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
           <mxGeometry x="420" y="212" width="340" height="44" as="geometry" />
         </mxCell>
         <mxCell id="arrow" value=".plot()" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;fontSize=16;fontFamily=Menlo;labelBackgroundColor=#ffffff;" edge="1" parent="1">
@@ -76,7 +76,7 @@
         <mxCell id="pD" value="Darmstadt" style="shape=mxgraph.basic.polygon;polyCoords=[[0.2,0],[0.8,0.1],[1,0.6],[0.6,1],[0,0.8]];polyline=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontFamily=Helvetica;" vertex="1" parent="1">
           <mxGeometry x="960" y="290" width="90" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="note1" value="Jede Zeile ist ein Kreis. Die Spalte geometry enthält seinen Umriss als Liste von Koordinaten (Länge, Breite)." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="note1" value="Jede Zeile ist ein Kreis. Die Spalte geometry enthält seinen Umriss als Liste von Koordinaten (x, y in Metern)." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="0" y="280" width="900" height="30" as="geometry" />
         </mxCell>
         <mxCell id="note2" value="Filtern, Sortieren und merge() funktionieren wie in pandas; dazu kommen Karten und Rechnen mit Flächen und Lage." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
