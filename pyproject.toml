@@ -9,6 +9,15 @@ dependencies = [
     "ipykernel>=6.29",
     "pytest>=8.3",
     "tzdata>=2025.2",  # Zeitzonen für zoneinfo unter Windows
+    # Ausblick-Notebooks 15-18: Excel, Landkarten, maschinelles Lernen, Bilder
+    "folium>=0.20",  # interaktive Karten für GeoDataFrame.explore()
+    "geopandas>=1.2",
+    "mapclassify>=2.8",  # Klasseneinteilung für Karten
+    "matplotlib>=3.11",
+    "openpyxl>=3.1",
+    "pandas>=3.1",
+    "pillow>=13.0",
+    "scikit-learn>=1.9",
 ]
 
 [dependency-groups]

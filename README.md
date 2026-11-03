@@ -44,8 +44,11 @@ Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
 | 12 | Klassen und Objekte (optional) | 4, 6 |
 | 13 | Testen mit pytest (Ordner `testen/`, Bonus) | 16 |
 | 14 | Abschlussprojekt Tic-Tac-Toe | 13, 16 |
+| 15 | Datenanalyse mit pandas (Ausblick) | – |
 
 00 bis 07 sind der Kern des Kurses und werden vollständig behandelt. Ab 08 wählen wir im Kurs aus; was offen bleibt, eignet sich zum Weiterlernen nach dem Kurs. Klassen (12) und Tests (13, Schritt 6 im Abschlussprojekt) sind ein Ausblick.
+
+Ab 15 folgen Ausblicke in die Praxis mit verbreiteten Bibliotheken (pandas, Excel, Landkarten, maschinelles Lernen). Sie sind Vorführungen ohne Übungen; die Daten darin sind simuliert und entstehen mit `tools/make_ausblick_data.py`.
 
 Welche Übungen wir im Kurs gemeinsam machen, entscheiden wir vor Ort; meist sind es die Kurzübungen in den Abschnitten und die leichten Übungen am Ende eines Notebooks, manche schwere führe ich vor. Die übrigen mittleren und schweren Übungen sind zum Vertiefen gedacht: für alle, die schneller fertig sind, und für die Zeit nach dem Kurs. Lösungen liegen im Ordner `loesungen/`.
 
