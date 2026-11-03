@@ -1,0 +1,124 @@
+<mxfile host="drawio">
+  <diagram id="verbinden" name="Verbinden">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Zwei Wege, Daten an eine Karte zu hängen" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="merge(): über einen gemeinsamen Schlüssel" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="45" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a0" value="Schluessel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="85" width="120" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" value="geometry" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="120" y="85" width="110" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="06531" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="0" y="121" width="120" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="POLYGON" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="120" y="121" width="110" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="plus" value="+" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="230" y="103" width="30" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="b0" value="Schluessel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="260" y="85" width="120" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" value="Einwohner" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="380" y="85" width="110" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="06531" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="260" y="121" width="120" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="268418" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="380" y="121" width="110" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="down1" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="165" as="sourcePoint" />
+            <mxPoint x="245" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0" value="Schluessel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="65" y="210" width="120" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="geometry" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="185" y="210" width="110" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" value="Einwohner" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="295" y="210" width="110" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" value="06531" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="65" y="246" width="120" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" value="POLYGON" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="185" y="246" width="110" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" value="268418" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="295" y="246" width="110" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="gleicher Schlüssel → gleiche Zeile,&lt;br&gt;wie merge() in Notebook 15" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="300" width="480" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sep" value="" style="endArrow=none;html=1;strokeColor=#cccccc;strokeWidth=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="50" as="sourcePoint" />
+            <mxPoint x="520" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2" value="sjoin(): über die Lage" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="45" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k1" value="Lahn-Dill-Kreis" style="shape=mxgraph.basic.polygon;polyCoords=[[0.15,0],[0.7,0.05],[1,0.35],[0.85,0.8],[0.45,1],[0.05,0.75],[0,0.3]];polyline=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontFamily=Helvetica;verticalAlign=bottom;spacingBottom=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="90" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="k2" value="Gießen" style="shape=mxgraph.basic.polygon;polyCoords=[[0,0.3],[0.5,0],[1,0.2],[0.95,0.75],[0.5,1],[0.1,0.85]];polyline=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontFamily=Helvetica;verticalAlign=bottom;spacingBottom=12;" vertex="1" parent="1">
+          <mxGeometry x="720" y="80" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="pw" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="125" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="pwl" value="Wetzlar" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="100" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pg" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="780" y="120" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="pgl" value="Gießen" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontFamily=Helvetica;fontColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="118" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s0" value="Filiale" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="560" y="246" width="130" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="Kreis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="690" y="246" width="200" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="Wetzlar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="560" y="282" width="130" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="Lahn-Dill-Kreis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="690" y="282" width="200" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="Gießen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="560" y="318" width="130" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" value="Gießen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=15;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="690" y="318" width="200" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="down2" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="205" as="sourcePoint" />
+            <mxPoint x="725" y="238" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n2" value="Punkt liegt in Fläche → gleiche Zeile, ganz ohne gemeinsame Spalte" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="550" y="365" width="480" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

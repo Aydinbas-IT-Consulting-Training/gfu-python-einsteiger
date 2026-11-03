@@ -46,10 +46,11 @@ Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
 | 14 | Abschlussprojekt Tic-Tac-Toe | 13, 16 |
 | 15 | Datenanalyse mit pandas (Ausblick) | – |
 | 16 | Excel mit openpyxl (Ausblick) | – |
+| 17 | Landkarten mit geopandas (Ausblick) | – |
 
 00 bis 07 sind der Kern des Kurses und werden vollständig behandelt. Ab 08 wählen wir im Kurs aus; was offen bleibt, eignet sich zum Weiterlernen nach dem Kurs. Klassen (12) und Tests (13, Schritt 6 im Abschlussprojekt) sind ein Ausblick.
 
-Ab 15 folgen Ausblicke in die Praxis mit verbreiteten Bibliotheken (pandas, Excel, Landkarten, maschinelles Lernen). Sie sind Vorführungen ohne Übungen; die Daten darin sind simuliert und entstehen mit `tools/make_ausblick_data.py`.
+Ab 15 folgen Ausblicke in die Praxis mit verbreiteten Bibliotheken (pandas, Excel, Landkarten, maschinelles Lernen). Sie sind Vorführungen ohne Übungen. Die Daten für 15 und 16 sind simuliert und entstehen mit `tools/make_ausblick_data.py`; die Karten in 17 nutzen amtliche Daten, aufbereitet mit `tools/make_karten_data.py`.
 
 Welche Übungen wir im Kurs gemeinsam machen, entscheiden wir vor Ort; meist sind es die Kurzübungen in den Abschnitten und die leichten Übungen am Ende eines Notebooks, manche schwere führe ich vor. Die übrigen mittleren und schweren Übungen sind zum Vertiefen gedacht: für alle, die schneller fertig sind, und für die Zeit nach dem Kurs. Lösungen liegen im Ordner `loesungen/`.
 
@@ -99,4 +100,4 @@ braucht man die [draw.io-Desktop-App](https://www.drawio.com); ändere die `.dra
 
 Der Kurs unterrichtet Python 3.15 (siehe `.python-version`); `uv sync` installiert es bei Bedarf.
 
-`daten/faust.txt` stammt von Project Gutenberg.
+`daten/faust.txt` stammt von Project Gutenberg. `daten/kreise.geojson` und `daten/laender.geojson`: © GeoBasis-DE / BKG (2023) (Daten verändert), [Datenlizenz Deutschland – Namensnennung – 2.0](https://www.govdata.de/dl-de/by-2-0). `daten/kreise_bevoelkerung.csv`: © Statistisches Bundesamt (Destatis), 2025, Gemeindeverzeichnis.

@@ -1,0 +1,80 @@
+<mxfile host="drawio">
+  <diagram id="geometrien" name="Geometrien">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Drei Grundformen: Punkt, Linie, Fläche" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="box1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="0" y="50" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="box2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="320" y="50" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="box3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="640" y="50" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pt" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="140" y="115" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ln" value="" style="endArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=4;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="170" as="sourcePoint" />
+            <mxPoint x="580" y="80" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="100" />
+              <mxPoint x="510" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pg" value="" style="shape=mxgraph.basic.polygon;polyCoords=[[0.15,0],[0.75,0.05],[1,0.45],[0.8,1],[0.3,0.9],[0,0.5]];polyline=0;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="710" y="70" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="Punkt" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="55" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="Linie" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="55" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="Fläche" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="55" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="Point(8.68, 50.11)" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="220" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="LineString([(x, y), (x, y), …])" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="320" y="220" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="Polygon([(x, y), …, (x, y)])" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="640" y="220" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="ein Paar Koordinaten&lt;br&gt;z. B. eine Filiale, eine Messstelle" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="250" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Punkte, der Reihe nach verbunden&lt;br&gt;z. B. eine Straße, ein Fluss" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="320" y="250" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="geschlossener Umriss mit Fläche&lt;br&gt;z. B. ein Kreis, ein Grundstück" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="640" y="250" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="crs-title" value="Koordinaten gibt es in verschiedenen Systemen (CRS):" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="320" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="crs1" value="EPSG:4326 · Länge und Breite in Grad" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="0" y="355" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="crs1n" value="weltweit, zum Speichern und für Webkarten" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="480" y="355" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="crs2" value="EPSG:25832 · x und y in Metern" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="0" y="400" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="crs2n" value="für Deutschland, zum Rechnen (km²) und Zeichnen" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="480" y="400" width="460" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

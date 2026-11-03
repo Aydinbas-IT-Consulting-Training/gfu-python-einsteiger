@@ -1,0 +1,88 @@
+<mxfile host="drawio">
+  <diagram id="geodataframe" name="GeoDataFrame">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="GeoDataFrame: ein DataFrame mit einer Spalte für die Form" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Helvetica;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="760" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lcols" value="normale pandas-Spalten" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="50" y="45" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgeo" value="geometry: die Form" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#d79b00;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="45" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="corner" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="80" width="50" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="h0" value="Schluessel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="140" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="h1" value="Kreis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="190" y="80" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" value="geometry" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="340" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="i0" value="0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="124" width="50" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="i1" value="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="168" width="50" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" value="2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Menlo;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="0" y="212" width="50" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r0a" value="06411" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="50" y="124" width="140" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r0b" value="Darmstadt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="190" y="124" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r0c" value="POLYGON ((8.56 49.84, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="124" width="340" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r1a" value="06412" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="50" y="168" width="140" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r1b" value="Frankfurt am Main" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="190" y="168" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c" value="POLYGON ((8.79 50.18, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="168" width="340" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r2a" value="06532" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="50" y="212" width="140" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r2b" value="Lahn-Dill-Kreis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=16;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="190" y="212" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c" value="POLYGON ((8.36 50.86, …))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=15;fontFamily=Menlo;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="212" width="340" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow" value=".plot()" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;fontSize=16;fontFamily=Menlo;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="775" y="168" as="sourcePoint" />
+            <mxPoint x="880" y="168" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLD" value="Lahn-Dill-Kreis" style="shape=mxgraph.basic.polygon;polyCoords=[[0.15,0],[0.7,0.05],[1,0.35],[0.85,0.8],[0.45,1],[0.05,0.75],[0,0.3]];polyline=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="900" y="50" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="pF" value="Frankfurt" style="shape=mxgraph.basic.polygon;polyCoords=[[0.1,0.2],[0.6,0],[1,0.3],[0.9,0.85],[0.4,1],[0,0.7]];polyline=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="990" y="190" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pD" value="Darmstadt" style="shape=mxgraph.basic.polygon;polyCoords=[[0.2,0],[0.8,0.1],[1,0.6],[0.6,1],[0,0.8]];polyline=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="960" y="290" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="Jede Zeile ist ein Kreis. Die Spalte geometry enthält seinen Umriss als Liste von Koordinaten (Länge, Breite)." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="280" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" value="Filtern, Sortieren und merge() funktionieren wie in pandas; dazu kommen Karten und Rechnen mit Flächen und Lage." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="315" width="900" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
