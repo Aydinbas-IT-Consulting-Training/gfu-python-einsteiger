@@ -7,7 +7,7 @@ Quellen (vorher herunterladen, Pfade als Argumente übergeben):
   Lizenz Datenlizenz Deutschland – Namensnennung – 2.0, Quellenvermerk laut
   Nutzungsbedingungen im ZIP: "© BKG (2026) dl-de/by-2-0 (Daten verändert), Datenquellen:
   https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg_nuts.pdf".
-  Verändert: nur Landflächen, nur Schlüssel, Name und Art, als GeoPackage gespeichert.
+  Verändert: nur die Kreise, nur Schlüssel, Name und Art, als GeoPackage gespeichert.
 - Gemeindeverzeichnis, Kreisfreie Städte und Landkreise nach Fläche und Bevölkerung
   (31.12.2024), ``04-kreise.xlsx``:
   https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/04-kreise.xlsx,
@@ -15,8 +15,8 @@ Quellen (vorher herunterladen, Pfade als Argumente übergeben):
 
 Ergebnis in ``daten/``:
 
-- ``verwaltungsgebiete.gpkg``: Umrisse der Kreise (Ebene ``kreise``) und Länder
-  (Ebene ``laender``), Koordinaten unverändert in Metern (EPSG:25832).
+- ``kreise.gpkg``: Umrisse der Kreise, Koordinaten unverändert in Metern (EPSG:25832).
+  Die Länder entstehen im Notebook aus den Kreisen.
 - ``kreise_bevoelkerung.csv``: Fläche und Einwohner je Kreis, deutsches CSV-Format.
 - ``filialen.csv``: Lage der Filialen aus ``umsatz_filialen.xlsx`` (Stadtmitte).
 
@@ -46,13 +46,12 @@ BRANCHES = [
 ]
 
 
-def read_shapes(zip_path: Path, layer: str, columns: dict[str, str]) -> gpd.GeoDataFrame:
+def read_districts(zip_path: Path) -> gpd.GeoDataFrame:
     with zipfile.ZipFile(zip_path) as archive:
-        name = next(n for n in archive.namelist() if n.endswith(f"{layer}.shp"))
-    shapes = gpd.read_file(f"zip://{zip_path}!{name}")
-    # GF 9: Landfläche; GF 8 sind Wasserflächen wie Bodensee und Küstengewässer
-    shapes = shapes[shapes["GF"] == 9]
-    return shapes[[*columns, "geometry"]].rename(columns=columns)
+        name = next(n for n in archive.namelist() if n.endswith("VG2500_KRS.shp"))
+    districts = gpd.read_file(f"zip://{zip_path}!{name}")
+    columns = {"ARS": "Schluessel", "GEN": "Kreis", "BEZ": "Art"}
+    return districts[[*columns, "geometry"]].rename(columns=columns)
 
 
 def write_population(xlsx_path: Path, keys: set[str]) -> None:
@@ -81,13 +80,9 @@ def write_branches() -> None:
 
 def main() -> None:
     zip_path, xlsx_path = map(Path, sys.argv[1:3])
-    districts = read_shapes(zip_path, "VG2500_KRS", {"ARS": "Schluessel", "GEN": "Kreis", "BEZ": "Art"})
-    states = read_shapes(zip_path, "VG2500_LAN", {"ARS": "Schluessel", "GEN": "Land"})
-    target = DATA_DIR / "verwaltungsgebiete.gpkg"
-    target.unlink(missing_ok=True)
-    for shapes, layer in [(districts, "kreise"), (states, "laender")]:
-        # Polygon bleibt Polygon; nur Kreise mit Inseln sind MultiPolygon wie im Original
-        shapes.to_file(target, layer=layer, driver="GPKG", promote_to_multi=False)
+    districts = read_districts(zip_path)
+    # Polygon bleibt Polygon; nur Kreise mit Inseln sind MultiPolygon wie im Original
+    districts.to_file(DATA_DIR / "kreise.gpkg", driver="GPKG", promote_to_multi=False)
     write_population(xlsx_path, set(districts["Schluessel"]))
     write_branches()
 
