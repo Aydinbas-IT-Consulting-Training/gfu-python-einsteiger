@@ -6,8 +6,8 @@ dieselben Zahlen liefert:
 - ``daten/umsatz_filialen.xlsx``: Umsatzbericht, wie er aus einer Fachabteilung
   kommt: Titel und Stand über der Tabelle, Gesamtzeile darunter, zweites Blatt
   mit Jahreszielen als saubere Tabelle.
-- ``daten/schweissprotokoll.csv``: Protokoll eines Schweißroboters mit
-  Prozesswerten je Naht und Prüfergebnis, im deutschen CSV-Format (Semikolon,
+- ``daten/schweissprotokoll.csv``: Protokoll eines Schweißroboters mit Strom
+  und Geschwindigkeit je Naht und Prüfergebnis, im deutschen CSV-Format (Semikolon,
   Dezimalkomma), wie es eine Anlage oder Excel exportiert. Roboter R3 driftet
   über die Wochen zu höherem Strom.
 
@@ -79,28 +79,25 @@ def german(number: float) -> str:
 
 
 def make_welding_log(rng: random.Random) -> None:
-    rows = [["Zeitpunkt", "Naht", "Roboter", "Strom_A", "Spannung_V",
-             "Drahtvorschub_m_min", "Geschwindigkeit_cm_min", "Ergebnis"]]
+    rows = [["Zeitpunkt", "Naht", "Roboter", "Strom_A", "Geschwindigkeit_cm_min",
+             "Ergebnis"]]
     start = datetime(2026, 9, 1, 6, 0)
     count = 600
     for number in range(1, count + 1):
         moment = start + timedelta(minutes=round(number * 50.4))
         robot = rng.choice(["R1", "R2", "R3"])
-        drift = 40 * number / count if robot == "R3" else 0
+        drift = 60 * number / count if robot == "R3" else 0
         current = rng.gauss(215, 22) + drift
-        voltage = 14 + 0.045 * current + rng.gauss(0, 0.6)
-        wire_feed = current / 30 + rng.gauss(0, 0.3)
         speed = rng.gauss(45, 7)
-        heat_input = voltage * current * 60 / (1000 * speed)  # kJ/cm
-        in_window = 5.5 <= heat_input <= 8.5
+        # Zu heiß und zu langsam brennt durch, zu kalt und zu schnell hält nicht
+        heat_per_cm = current / speed
+        in_window = 3.9 <= heat_per_cm <= 5.6
         failed = rng.random() < (0.03 if in_window else 0.85)
         rows.append([
             f"{moment:%d.%m.%Y %H:%M}",
             f"N-{number:04d}",
             robot,
             german(round(current, 1)),
-            german(round(voltage, 1)),
-            german(round(wire_feed, 2)),
             german(round(speed, 1)),
             "nicht ok" if failed else "ok",
         ])
