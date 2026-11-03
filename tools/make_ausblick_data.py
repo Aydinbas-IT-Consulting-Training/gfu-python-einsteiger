@@ -107,7 +107,7 @@ def make_welding_log(rng: random.Random) -> None:
 
     with open(DATA_DIR / "schweissprotokoll.csv", "w", encoding="utf-8",
               newline="") as file:
-        csv.writer(file, delimiter=";").writerows(rows)
+        csv.writer(file, delimiter=";", lineterminator="\n").writerows(rows)
 
 
 def main() -> None:
