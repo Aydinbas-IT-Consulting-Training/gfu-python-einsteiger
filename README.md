@@ -47,10 +47,11 @@ Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
 | 15 | Datenanalyse mit pandas (Ausblick) | – |
 | 16 | Excel mit openpyxl (Ausblick) | – |
 | 17 | Landkarten mit geopandas (Ausblick) | – |
+| 18 | Maschinelles Lernen mit scikit-learn (Ausblick) | – |
 
 00 bis 07 sind der Kern des Kurses und werden vollständig behandelt. Ab 08 wählen wir im Kurs aus; was offen bleibt, eignet sich zum Weiterlernen nach dem Kurs. Klassen (12) und Tests (13, Schritt 6 im Abschlussprojekt) sind ein Ausblick.
 
-Ab 15 folgen Ausblicke in die Praxis mit verbreiteten Bibliotheken (pandas, Excel, Landkarten, maschinelles Lernen). Sie sind Vorführungen ohne Übungen. Die Daten für 15 und 16 sind simuliert und entstehen mit `tools/make_ausblick_data.py`; die Karten in 17 nutzen amtliche Daten, aufbereitet mit `tools/make_karten_data.py`.
+Ab 15 folgen Ausblicke in die Praxis mit verbreiteten Bibliotheken (pandas, Excel, Landkarten, maschinelles Lernen). Sie sind Vorführungen ohne Übungen. Die Daten für 15 und 16 sind simuliert und entstehen mit `tools/make_ausblick_data.py`; die Karten in 17 nutzen amtliche Daten, aufbereitet mit `tools/make_karten_data.py`. 18 nutzt beides: das simulierte Schweißprotokoll aus 15 und die Kreise aus 17.
 
 Welche Übungen wir im Kurs gemeinsam machen, entscheiden wir vor Ort; meist sind es die Kurzübungen in den Abschnitten und die leichten Übungen am Ende eines Notebooks, manche schwere führe ich vor. Die übrigen mittleren und schweren Übungen sind zum Vertiefen gedacht: für alle, die schneller fertig sind, und für die Zeit nach dem Kurs. Lösungen liegen im Ordner `loesungen/`.
 

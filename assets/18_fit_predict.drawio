@@ -1,0 +1,55 @@
+<mxfile host="drawio">
+  <diagram id="fit_predict" name="Lernen und Vorhersagen">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s1" value="1. lernen" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="train" value="&lt;b&gt;Beispiele mit Ergebnis&lt;/b&gt;&lt;br&gt;X: Geschwindigkeit, Strom&lt;br&gt;y: ok / nicht ok" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="0" y="40" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fit" value="model.fit(X, y)" style="text;html=1;align=center;verticalAlign=bottom;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="260" y="50" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="85" as="sourcePoint" />
+            <mxPoint x="490" y="85" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="model" value="&lt;b&gt;Modell&lt;/b&gt;&lt;br&gt;hat aus den Beispielen&lt;br&gt;eine Regel gelernt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="220" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="2. vorhersagen" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="145" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="new" value="&lt;b&gt;neue Nähte&lt;/b&gt;&lt;br&gt;nur X, Ergebnis unbekannt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="0" y="180" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pred" value="model.predict(X_neu)" style="text;html=1;align=center;verticalAlign=bottom;fontSize=16;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="260" y="180" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="215" as="sourcePoint" />
+            <mxPoint x="490" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="200" as="sourcePoint" />
+            <mxPoint x="790" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out" value="&lt;b&gt;Vorhersage&lt;/b&gt;&lt;br&gt;ok / nicht ok&lt;br&gt;je neue Naht" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="800" y="160" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Jedes Modell in scikit-learn hat diese beiden Methoden, egal wie es innen rechnet." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="265" width="920" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

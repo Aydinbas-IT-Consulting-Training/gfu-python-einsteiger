@@ -1,0 +1,55 @@
+<mxfile host="drawio">
+  <diagram id="train_test" name="Training und Test">
+    <mxGraphModel grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="train_test_split(X, y, test_size=0.25)" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontFamily=Menlo;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="all" value="600 Nähte mit bekanntem Ergebnis, zufällig gemischt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="0" y="45" width="800" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="tr" value="Training: 450 Nähte (75 %)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="0" y="125" width="600" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="te" value="Test: 150 Nähte (25 %)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="600" y="125" width="200" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="e0a" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="92" as="sourcePoint" />
+            <mxPoint x="300" y="122" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e0b" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="92" as="sourcePoint" />
+            <mxPoint x="700" y="122" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="172" as="sourcePoint" />
+            <mxPoint x="300" y="212" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="" style="endArrow=classic;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="172" as="sourcePoint" />
+            <mxPoint x="700" y="212" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fit" value="&lt;font face=&quot;Menlo&quot;&gt;model.fit(X_train, y_train)&lt;/font&gt;&lt;br&gt;Das Modell lernt nur aus diesen Nähten." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="100" y="215" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="score" value="&lt;font face=&quot;Menlo&quot;&gt;model.score(X_test, y_test)&lt;/font&gt;&lt;br&gt;Anteil richtig vorhergesagter Nähte, die es nie gesehen hat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=16;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="540" y="215" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Wie eine Prüfung mit neuen Aufgaben: Wer die Übungsaufgaben nur auswendig gelernt hat, fällt hier auf." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontFamily=Helvetica;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="320" width="860" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
