@@ -209,8 +209,6 @@ Tipp: Für mehrere Antworten nacheinander legst du sie in einen Iterator,
 
 Die Musterlösung steht in `loesung_test_uebungen.py`.
 
-Im Abschlussprojekt (Notebook 14) testest du so die Spiellogik von Tic-Tac-Toe.
-
 ## Zusammenfassung
 
 - pytest sammelt Funktionen `test_…` aus Dateien `test_*.py` und führt sie aus.

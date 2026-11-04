@@ -23,8 +23,6 @@ Begleitbuch: Michael Inden, *Einstieg in Python*, 2. Auflage, dpunkt 2024.
 
 5. Ein Notebook aus `notebooks/` öffnen und oben rechts den Kernel `.venv` auswählen.
 
-Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
-
 ## Inhalt
 
 | Nr. | Notebook | Buchkapitel |
@@ -43,28 +41,25 @@ Skripte startest du im Terminal mit `uv run python projekte/tictactoe.py`.
 | 11 | Datum und Zeit | 10 |
 | 12 | Klassen und Objekte (optional) | 4, 6 |
 | 13 | Testen mit pytest (Ordner `testen/`, Bonus) | 16 |
-| 14 | Abschlussprojekt Tic-Tac-Toe | 13, 16 |
 | 15 | Datenanalyse mit pandas (Ausblick) | – |
 | 16 | Excel mit openpyxl (Ausblick) | – |
 | 17 | Landkarten mit geopandas (Ausblick) | – |
 | 18 | Maschinelles Lernen mit scikit-learn (Ausblick) | – |
 
-00 bis 07 sind der Kern des Kurses und werden vollständig behandelt. Ab 08 wählen wir im Kurs aus; was offen bleibt, eignet sich zum Weiterlernen nach dem Kurs. Klassen (12) und Tests (13, Schritt 6 im Abschlussprojekt) sind ein Ausblick.
+00 bis 07 sind der Kern des Kurses und werden vollständig behandelt. Ab 08 wählen wir im Kurs aus; was offen bleibt, eignet sich zum Weiterlernen nach dem Kurs. Klassen (12) und Tests (13) sind ein Ausblick.
 
 Ab 15 folgen Ausblicke in die Praxis mit verbreiteten Bibliotheken (pandas, Excel, Landkarten, maschinelles Lernen). Sie sind Vorführungen ohne Übungen. Die Daten für 15 und 16 sind simuliert und entstehen mit `tools/make_ausblick_data.py`; die Karten in 17 nutzen amtliche Daten, aufbereitet mit `tools/make_karten_data.py`. 18 nutzt beides: das simulierte Schweißprotokoll aus 15 und die Kreise aus 17.
 
-Welche Übungen wir im Kurs gemeinsam machen, entscheiden wir vor Ort; meist sind es die Kurzübungen in den Abschnitten und die leichten Übungen am Ende eines Notebooks, manche schwere führe ich vor. Die übrigen mittleren und schweren Übungen sind zum Vertiefen gedacht: für alle, die schneller fertig sind, und für die Zeit nach dem Kurs. Lösungen liegen im Ordner `loesungen/`.
+Geübt wird direkt nach jedem Abschnitt mit einer kurzen Übung (Kurzübung), die in wenigen Minuten gelöst ist. Lösungen liegen im Ordner `loesungen/`.
 
 ### Lesepfad zum Buch
 
-Die Notebooks folgen weitgehend der Reihenfolge des Buchs. Vier Abweichungen:
+Die Notebooks folgen weitgehend der Reihenfolge des Buchs. Drei Abweichungen:
 
 - **Kapitel 2 (Schnelleinstieg)** ist auf mehrere Notebooks verteilt: 01 Variablen, 03 Bedingungen, 04 Schleifen.
 - **Kapitel 4 (Klassen)** lesen wir erst spät (Notebook 12), weil Klassen Funktionen voraussetzen.
 - **Kapitel 9 (Fehlerbehandlung)** ziehen wir vor Kapitel 7 (Dateien), weil wir `try` und `with` beim Arbeiten mit Dateien brauchen.
-- **Kapitel 16 (Testen)** kommt vor dem Abschlussprojekt, damit wir dessen Spiellogik mit Tests absichern.
-
-Zum Mitlesen also die Buchkapitel in dieser Reihenfolge: Kapitel 1 → 2 → 3 → 5 → 6 → 8 → 9 → 7 → 14 → 10 → 4 → 16 → 13.
+Zum Mitlesen also die Buchkapitel in dieser Reihenfolge: Kapitel 1 → 2 → 3 → 5 → 6 → 8 → 9 → 7 → 14 → 10 → 4 → 16.
 
 Teil 13 ist kein Notebook, sondern ein Ordner mit echten Testdateien. Wie du ihn durcharbeitest, steht in `testen/README.md`.
 
@@ -74,7 +69,6 @@ Teil 13 ist kein Notebook, sondern ein Ordner mit echten Testdateien. Wie du ihn
 notebooks/   Notebooks für Teilnehmende, Übungen leer
 loesungen/   dieselben Notebooks mit Lösungen
 daten/       Beispieldateien (daten/ausgabe/ entsteht beim Arbeiten)
-projekte/    lauffähige Skripte
 testen/      Einstieg in pytest: Modul, Testdateien, Übungen
 beispiele/   Module und Pakete für Notebook 08
 assets/      Grafiken der Notebooks (draw.io-Quelle und PNG)

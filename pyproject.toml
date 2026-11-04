@@ -31,13 +31,12 @@ dev = [
 compile-bytecode = true  # sonst zeigt ColabTurtle beim ersten Import eine SyntaxWarning im Notebook
 
 [tool.pytest.ini_options]
-pythonpath = ["projekte"]  # Notebook 14 testet projekte/tictactoe.py
 testpaths = ["testen"]
 
 [tool.ruff]
 line-length = 88
 extend-exclude = ["*.ipynb"]  # Notebooks enthalten absichtliche Fehlerbeispiele
-src = [".", "projekte", "testen"]
+src = [".", "testen"]
 
 [tool.ruff.lint.per-file-ignores]
 "testen/*" = ["PLR0133"]  # Vergleiche von Konstanten zeigen, wie assert arbeitet
