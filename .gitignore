@@ -225,3 +225,4 @@ loesungen/*.py
 
 # Foliensätze des Trainers liegen außerhalb des Repos
 *.pptx
+.opencode
